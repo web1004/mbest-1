@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi" name="viewport">
+<title>Ticket - VAN GOGH INSIDE</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/vote.css">
+<link rel="stylesheet" href="css/ticket.css">
+</head>
+<body>
+    <div id="pc"><img src="image/pc.png" alt="pc 안내"></div>
+    <div class="vote">
+        <a href="https://booking.naver.com/booking/12/bizes/577287"><span>티켓 구매</span> 바로가기</a>
+    </div>
+    <div id="wrap">
+        <div class="nav_open"><span></span></div>
+        <nav>
+            <div class="nav_close"><span class="material-icons">close</span></div>
+            <ul>
+                <li><a href="intro.html">INTRO</a></li>
+                <li><a href="exhibition.html">EXHIBITION</a></li>
+                <li><a href="ticket.html" class="active_menu">TICKET</a></li>
+                <li><a href="visit.html">VISIT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+            <footer>
+                <ul>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul>
+                <address>(주)미디어앤아트<br>서울특별시 성동구 아차산로17길 49 A동 지하 1층 111호</address>
+                <p>&copy;2020 BY GROUNDSEESAW ALL RIGHTS RESEVED.</p>
+            </footer>
+        </nav>
+
+        <header>
+            <h1 id="logo">
+                <a href="index.html">VAN GOGH INSIDE<span>The Theater</span></a>
+            </h1>
+        </header>
+
+        <section>
+            <span class="line"></span>
+            <span class="line"></span>
+            <div id="title">
+                <h2>TICKET</h2>
+            </div>
+            <ul class="information">
+                <li>
+                    <h3>전시<br>기간</h3>
+                    <p>2021-10-15 ~ 2021-12-31</p>
+                </li>
+                <li>
+                    <h3>관람<br>시간</h3>
+                    <p>오전 11시 ~ 오후 8시<span>롯데백화점 본점 휴점일 휴관</span></p>
+                </li>
+                <li class="person"><img src="image/index/person.png" alt="인물실루엣"></li>
+            </ul>
+            <span class="shape"></span>
+            <span class="shape"></span>
+            <div class="price_table">
+                <table>
+                    <tr>
+                        <td>구분</td>
+                        <td>성인</td>
+                        <td>청소년</td>
+                    </tr>
+                    <tr>
+                        <td>요금</td>
+                        <td>15,000원</td>
+                        <td>12,000원</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">36개월 미만 영유아 무료<span>증빙지참 필수</span></td>
+                    </tr>
+                </table>
+                <p>성인 : 20세이상 / 청소년 : 36개월이상 19세이하</p>
+            </div>
+           
+            <ul class="caution">
+                <li class="caution_title">유의사항</li>
+                <li>
+                    <img src="image/ticket/ticke1.png" alt="메타포아이콘">
+                    <p><span>현장 구매불가</span>합니다.<br><span>네이버 예약</span>을 통해서만 가능합니다.</p>
+                </li>
+                <li>
+                    <img src="image/ticket/ticke2.png" alt="메타포아이콘">
+                    <p><span>오후 7시 입장이 마감</span>됩니다.<br>회차 별 관람가능한 전시가 상이합니다.</p>
+                </li>
+                <li>
+                    <img src="image/ticket/ticke3.png" alt="메타포아이콘">
+                    <p>전시장 내부가 많이 어둡습니다.</p>
+                </li>
+                <li>
+                    <img src="image/ticket/ticke4.png" alt="메타포아이콘">
+                    <p>사운드 음량이 큽니다.</p>
+                </li>
+                <li><span>폐소공포증이 있거나 임산부, 노약자 등에<br>해당하는 분들은 입장 전 유의 부탁드립니다.</span></li>
+            </ul>
+
+        </section>
+
+    </div>
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/vote.js"></script>
+    <script src="js/ticket.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+        </script>
+</body>
+</html>

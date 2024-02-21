@@ -1,0 +1,82 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: INK;
+    src: url(../font/INKLIPQUID.woff);
+}
+@font-face {
+    font-family:NanumBarunGothic;
+    src: url(../font/NanumBarunGothic.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicBold;
+    src: url(../font/NanumBarunGothicBold.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicLight;
+    src: url(../font/NanumBarunGothicLight.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicUltraLight;
+    src: url(../font/NanumBarunGothicUltraLight.woff);
+}
+
+body{
+    color:#333;
+    font-family: NanumBarunGothicLight;
+    font-size:18px;
+}
+/*_____________________________________________ 푸터*/
+footer{
+    width:100%;
+    min-width:1280px;
+    height:200px;
+    background:#333;
+    color:#ccc;
+}
+#footer_in{
+    width:1280px;
+    margin:0 auto;
+    text-align:right;
+}
+#footer_logo{
+    font: italic 30px 'Lato';
+    font-weight: 700;
+    color:#ccc;
+    line-height: 50px;
+    padding:20px 20px 0 0;
+}
+#footer_logo span{font-weight:900;}
+
+#footer_in ul{
+    clear:both;
+    float:right;
+    margin: 3px 0;
+}
+#footer_in ul li{
+    float:left;
+    font-size:14px;
+    padding: 0 10px;
+}
+#footer_in ul li a{
+    font-family:NanumBarunGothic;
+    color:#fff;
+}
+#footer_in ul li a:hover{
+    color:#ff9b4a;
+    transition:all 0.2s;
+}
+
+#footer_in ul:nth-of-type(2) li,#footer_in ul:nth-of-type(3) li{border-left:1px solid #999;}
+#footer_in ul:nth-of-type(2) li:first-child,
+#footer_in ul:nth-of-type(3) li:first-child{border:none;}
+
+
+#footer_in p{
+    clear:both;
+    color:#999;
+    font-size:12px;
+    padding-right:10px;
+}
+#footer_in p:first-of-type{padding-top:10px;}

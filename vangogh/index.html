@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi" name="viewport">
+<title>VAN GOGH INSIDE</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/vote.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="pc"><img src="image/pc.png" alt="pc 안내"></div>
+    <div class="vote">
+        <a href="https://booking.naver.com/booking/12/bizes/577287"><span>티켓 구매</span> 바로가기</a>
+    </div>
+    <div id="wrap">
+        <div class="nav_open"><span></span></div>
+        <nav>
+            <div class="nav_close"><span class="material-icons">close</span></div>
+            <ul>
+                <li><a href="intro.html">INTRO</a></li>
+                <li><a href="exhibition.html">EXHIBITION</a></li>
+                <li><a href="ticket.html">TICKET</a></li>
+                <li><a href="visit.html">VISIT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+            <footer>
+                <ul>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul>
+                <address>(주)미디어앤아트<br>서울특별시 성동구 아차산로17길 49 A동 지하 1층 111호</address>
+                <p>&copy;2020 BY GROUNDSEESAW ALL RIGHTS RESEVED.</p>
+            </footer>
+        </nav>
+
+        <header>
+            <h1 id="logo">
+                <a href="index.html">VAN GOGH INSIDE<span>The Theater</span></a>
+            </h1>
+        </header>
+
+        <section>
+            <div id="visual">
+                <div class="visual_top1"></div>
+                <div class="visual_top2"></div>
+                <div class="visual_wall">
+                    <ul class="visual_wall_in">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div></div>
+                    <ul class="visual_box">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <img src="image/index/person.png" alt="인물 실루엣">
+                </div>
+                <img src="image/index/person.png" alt="인물 실루엣">
+                <div class="visual_bottom">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="section_title">
+                <p>VAN GOGH INSIDE<span>The Theater</span></p>
+                <p>2021.10.15 - 2021.12.31</p>
+                <p>그라운드 시소  X  미디어앤아트</p> 
+            </div>
+            <div id="animation_timer"></div>
+        </section>
+
+    </div>
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/vote.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+        </script>
+</body>
+</html>

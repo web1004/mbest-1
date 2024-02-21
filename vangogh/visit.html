@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi" name="viewport">
+<title>Visit - VAN GOGH INSIDE</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/visit.css">
+</head>
+<body>
+    <div id="pc"><img src="image/pc.png" alt="pc 안내"></div>
+
+    <div id="wrap">
+        <div class="nav_open"><span></span></div>
+        <nav>
+            <div class="nav_close"><span class="material-icons">close</span></div>
+            <ul>
+                <li><a href="intro.html">INTRO</a></li>
+                <li><a href="exhibition.html">EXHIBITION</a></li>
+                <li><a href="ticket.html">TICKET</a></li>
+                <li><a href="visit.html" class="active_menu">VISIT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+            <footer>
+                <ul>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul>
+                <address>(주)미디어앤아트<br>서울특별시 성동구 아차산로17길 49 A동 지하 1층 111호</address>
+                <p>&copy;2020 BY GROUNDSEESAW ALL RIGHTS RESEVED.</p>
+            </footer>
+        </nav>
+
+        <header>
+            <h1 id="logo">
+                <a href="index.html">VAN GOGH INSIDE<span>The Theater</span></a>
+            </h1>
+        </header>
+
+        <section>
+
+            <span class="line"></span>
+            <span class="line"></span>
+            <div id="title">
+                <h2>VISIT</h2>
+            </div>
+            
+            <div id="intro">
+                <div class="gallery">
+                    <div class="largeImg"><img src="image/visit/visit1.jpeg" alt="BLUE ROOM"></div>
+                    <div class="thumbs">
+                        <a href="image/visit/visit1.jpeg"><img src="image/visit/visit1.jpeg" alt="BLUE ROOM" class="active"></a>
+                        <a href="image/visit/visit2.jpeg"><img src="image/visit/visit2.jpeg" alt="전시장 이미지"></a>
+                        <a href="image/visit/visit3.jpeg"><img src="image/visit/visit3.jpeg" alt="전시장 이미지"></a>
+                        <a href="image/visit/visit4.jpeg"><img src="image/visit/visit4.jpeg" alt="전시장 이미지"></a>
+                    </div>
+                </div>
+                <h3>그라운드시소 명동</h3>
+                <p>
+                    그라운드시소 명동은 극장의 미래를 제안하는 공간입니다.
+
+                    롯데백화점 본점 에비뉴엘 9층은 최고 높이 6m의 벽면 스크린으로
+                    재탄생됩니다. 5면 영상 상영을 위해 설계된 멀티플렉스급 영상과 음향
+                    시스템은 혁신적인 몰입감을 제공합니다.
+                </p>
+                <span></span>
+            </div>
+
+            <div id="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.614216728305!2d126.97945431531153!3d37.564151979798304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f795efd6e1%3A0x8499ed1e3250b879!2z6re465287Jq065Oc7Iuc7IaMIOuqheuPmQ!5e0!3m2!1sko!2skr!4v1635918761077!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="contact clear">
+                    <p class="address">
+                        서울시 중구 남대문로 73<br>롯데백화점 본점 에비뉴엘 9F
+                        <span>롯데백화점 에비뉴엘 1층 샤넬 매장 옆 전용 엘리베이터 이용</span>
+                    </p>
+                    <p class="phone_num">1522-1796</p>
+                    <a href="tel:0215221796"><span class="material-icons">call</span></a>
+                </div>
+                <div class="transportation">
+                    <h4>교통안내</h4>
+                    <ul>
+                        <li>
+                            <p><span class="material-icons">directions_car</span></p>
+                            롯데백화점 본점 지하주차장 이용 <br>및 타워 주차장 이용
+                            <ul class="parking">
+                                <li>주차 할인권은 1시간에 4,500원이며 전시장 내 아트샵에서 구매 가능 (주차할인권 미구매 시 일반 주차요금 적용)</li>
+                                <li>에비뉴엘 주차장은 주차 혜택 적용 불가</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><span class="material-icons">train</span></p>
+                            을지로입구역(2호선) 7번 출구<br>도보 5분 거리
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/vote.js"></script>
+    <script src="js/visit.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+        </script>
+</body>
+</html>

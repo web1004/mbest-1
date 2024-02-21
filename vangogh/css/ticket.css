@@ -1,0 +1,220 @@
+@import url(common.css);
+@import url(swiper.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+#pc{display:none;}
+#wrap{
+    min-width:320px;
+    width:100%;
+    max-width:480px;
+    /* height:100%; */
+    font-size:16px;
+    font-size: 1rem;
+    background:#222;
+    color:#fff;
+    font-family:'Noto Sans KR';
+}
+section span.line{
+    display:inline-block;
+    height:1px;
+    width:12%;
+    background:red;
+}
+section>span:first-child{
+    position:absolute;
+    top:15vh;
+    background:rgba(255,255,255,0.6);
+    left:0;
+    transform:rotate(50deg);
+}
+section>span:nth-child(2){
+    position:absolute;
+    top:15vh;
+    background:rgba(255,255,255,0.6);
+    right:0;
+    transform:rotate(-50deg);
+}
+section>span.shape{
+    display:inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 20px solid #222;
+    border-bottom: 15px solid transparent;
+    margin-top:-10px;
+}
+section>span:nth-of-type(3){
+    position:absolute;
+    margin-left:10%;
+
+}
+section>span:nth-of-type(4){
+    transform:rotate(180deg);
+    margin-left:calc(90% - 20px);
+}
+
+section #title {
+    width:100%;
+    height:18vh;
+}
+section #title h2{
+    text-align: center;
+    padding-top:10vh;
+    font-weight:100;
+    font-size:36px;
+    font-size:2.250rem;
+    font-family:'Scheherazade';
+}
+section .information{
+    box-shadow:0 -5px 30px #222, 0 5px 2px #000;
+    position:relative;
+    width:80%;
+    height: 50vh;
+    margin:0 10%;
+    background:url(../image/ticket/visual.jpg) no-repeat center bottom;
+    background-size:cover;
+}
+section .information li:not(.person){
+    text-align: center;
+    font-size:18px;
+    font-size:1.125rem;
+    animation: title_move 1s;
+}
+@keyframes title_move {
+    0%{transform:translateX(10%);opacity:0;}
+    100%{transform:translateX(0%);opacity:1;}
+}
+section .information li h3{
+    float:left;
+    background:rgba(218,178,80,0.9);
+    /* background:linear-gradient(rgb(218,178,80),rgb(138, 109, 37)); */
+    width:60px;
+    height:60px;
+    color:#222;
+    font-weight:500;
+    border-top:#111 solid 1px;
+    box-sizing: border-box;
+}
+section .information li p{
+    font-size:18px;
+    font-size:1.125rem;
+    font-weight:500;
+    float:left;
+    width:calc(100% - 60px);
+    height:60px;
+    background:rgba(0,0,0,0.6);
+    border-top:1px #111 solid;
+    box-sizing: border-box;
+}
+section .information li p span{
+    font-weight:100;
+    display:block;
+    font-size:12px;
+    font-size:0.75rem;
+    line-height: 0px;
+    color:rgb(255,238,13);
+}
+section .information li:nth-of-type(1) p{line-height: 60px;}
+section .information li:nth-of-type(2) p{line-height: 40px;}
+section .information li.person img{
+    position:absolute;
+    bottom:0;
+    left:35%;
+    height:25vh;
+}
+
+
+section div.price_table{
+    background:linear-gradient(rgb(241, 200, 96),rgb(216, 170, 55));
+    box-shadow:0 20px 30px #000;
+    width:80%;
+    height:20vh;
+    margin:-15px 10% 0;
+}
+section div.price_table table{
+    height:100%;
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    font-size:18px;
+    font-size:1.125rem;
+    font-weight:500;
+    color:rgb(43, 32, 7);
+    animation:title_move_2 1s;
+}
+@keyframes title_move_2 {
+    0%{transform:translateY(10%);opacity:0;}
+    100%{transform:translateY(0%);opacity:1;}
+}
+section div.price_table table tr{
+    height:calc(100% / 3);
+    border-bottom:1px solid rgb(99, 73, 8);
+}
+section div.price_table table td{
+    width:calc(100% / 3);
+}
+section div.price_table table tr:last-child{
+    border:none;
+    font-size:14.5px;
+    font-size:0.906rem;
+}
+section div.price_table table tr td:nth-child(2),
+section div.price_table table tr td:nth-child(3)
+{font-weight:800;}
+section div.price_table table span{
+    display:inline-block;
+    padding:0 5px;
+    font-size:12px;
+    font-size:0.75rem;
+    color:rgb(53, 39, 5);
+}
+section div.price_table>p{
+    margin-top:5px;
+    font-size:12.5px;
+    font-size:0.781rem;
+    text-align:center;
+    color:rgb(218,178,80);
+    animation:title_move_2 1.5s;
+}
+
+section ul.caution{
+    margin:11vh 5% 0;
+    padding-bottom:10vh;
+    text-align: center;
+    color:rgba(255,255,255,0.8);
+}
+section .caution li.caution_title{
+    border-bottom:1px solid rgba(255,255,255,0.6);
+    font-weight:100;
+    padding:20px;
+}
+section .caution li{
+    font-size:16px;
+    font-size:1rem;
+    margin-bottom:20px;
+}
+.caution li:nth-child(n+2):nth-child(-n+5){opacity:0;transform:scale(0)}
+section .caution li img{
+    width:40%;
+}
+section .caution li span{
+    font-weight:500;
+    color:rgb(218,178,80);
+}
+@media all and (min-width:481px){
+    #pc{
+        display:block;
+        width:100%;
+        height:100%;
+        background:#111;
+        text-align: center
+    }
+    div.vote{display:none;}
+    #wrap {display: none;}
+    header{display:none;}
+
+
+}

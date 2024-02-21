@@ -1,0 +1,220 @@
+﻿@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family:'NanumBarunGothic';
+    src: url("../font/NanumBarunGothic.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicBold';
+    src: url("../font/NanumBarunGothicBold.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicLight';
+    src: url("../font/NanumBarunGothicLight.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicExtraLight';
+    src: url("../font/NanumBarunGothicUltraLight.woff") format('woff'); 
+}
+/*포트폴리오  TYPO*/
+@font-face {
+    font-family:'KoPub-Dotum-Medium';
+    src: url("../font/KoPub-Dotum-Medium.woff") format('woff'); 
+}
+@font-face {
+    font-family:'SCDream6';
+    src: url("../font/SCDream6.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumSomiche';
+    src: url("../font/NanumSomiChe.woff") format('woff'); 
+}
+
+
+#wrap{
+	background:#F2F2F2;
+	color:#333;
+	font-family: 'NanumBarunGothic';
+	font-weight:300;
+	font-size:16px;
+}
+#navi.slideUp {
+	transform: translateY(-100%);
+	transition:all 0.3s;
+}
+
+#navi {
+	background:#f2f2f26b;
+	position:fixed;	
+	width:100vw;
+	z-index:10000;
+}
+#navi h1 {
+	float:left;
+	margin:15px 50px 0;
+	width:40px;
+	height:40px;
+	background:url(../image/3.design/logo_black.png) no-repeat center center;
+	background-size:contain;
+}
+.main-nav {
+	position:relative;
+	float:left;
+	height:60px;
+	margin:10px 0 0 50px;
+}
+.main-nav li {
+	list-style:none;	
+	display:inline-block;
+	margin:12px 30px;
+}
+.main-nav a {
+	font-family:Arial;
+	font-size:20px;
+	text-decoration: none;
+}
+.container {
+	min-height:730px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	margin:0;
+}
+.bg-holder{
+  width:100%;
+  height:100%;
+}
+
+.section_in{
+	position:relative;
+	width:1280px;
+	/* height:100%; */
+	margin:0 auto;
+}
+
+section#visual{background-image:url("../image/3.design/graphic_9/graphic_9_title.jpg");}
+section#visual .section_in{height:100%;}
+section#visual .section_in h3{
+	text-shadow:5px 5px 10px rgba(0,0,0,0.1);
+	position:absolute;
+	left:40px;
+	bottom:320px;
+	font-size:36px;
+	font-family: 'NanumBarunGothicBold';
+}
+section#visual .section_in h3>span:first-child{
+	font-family: 'NanumBarunGothicBold';
+	display:block;
+	margin-bottom:10px;
+	font-size:16px;
+	background:rgb(202, 0, 0);
+	color:#fff;
+	text-align: center;
+	width:80px;
+	height:25px;
+	line-height: 25px;
+	border-radius: 5px;
+}
+section#visual .section_in h3>span:last-child{
+	font-size:20px;
+	font-weight:100;
+	font-family: 'NanumBarunGothicLight';
+	margin-left: 20px;
+}
+section#overview{
+	background:#fff;
+	height:300px;
+	margin-top:-300px;
+}
+#overview .overview_text{margin:0 60px;padding-top:100px;}
+#overview h4{
+	color:#999;
+	float:left;
+	font-size:28px;
+	font-family: 'Righteous', cursive;
+	width:160px;
+}
+#overview .overview_text>div{
+	float:left;
+	width:1000px;
+	margin-top:5px;
+	line-height:36px;
+	font-size:18px;
+}
+#overview .overview_text div>span{
+	/* font-weight:500; */
+	font-family: 'NanumBarunGothicBold';
+	color:#000;
+}
+#overview .overview_text div ul {margin-top:10px;font-size:16px;}
+#overview .overview_text div ul li{float:left;padding:0 10px;}
+#overview .overview_text div>ul>li{margin-right:40px;}
+#overview .overview_text div>ul>li>ul>li:first-child{color:#999;font-size:14px;}
+div.work_range{
+	display:inline-block;
+	width:300px;
+	height:30px;
+	border:1px solid #999;
+	border-radius:20px;
+	text-align: center;
+	color:#F2F2F2;
+	overflow: hidden;
+	line-height: 28px;
+	font-weight:500;
+}
+div.work_range div{
+	width:300px;
+	height:100%;
+	background-color: #999;
+	animation: range 1s ease-in-out;
+	overflow: hidden;
+}
+@keyframes range {
+	0%{width:0%;background-color:#666;}
+}
+img.tool{
+	width:30px;
+	height:30px;
+	margin-right:5px;
+}
+
+section#output1 h4,section#output2 h4,section#output3 h4{
+	padding:100px 60px 0px;
+	font-size:28px;
+	font-family: 'Righteous','Do hyeon';
+}
+section#output1 hr,section#output2 hr,section#output3 hr{
+	width:50px;
+	height:5px;
+	border:none;
+	margin:10px auto 20px;
+}
+section#output1 img,section#output2 img,section#output3 img{
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4), 5px 2px 20px rgba(0,0,0,0.2);
+}
+
+section#output1{
+	background:url(../image/3.design/graphic_9/graphic_9_output1_bga.jpg) no-repeat center center;
+	background-size:cover;
+	text-align: center;
+}
+section#output1 h4{color:#333;}
+section#output1 hr{background:#333;}
+
+section#output2{
+	background:url(../image/3.design/graphic_9/graphic_9_output2_bg.jpg) no-repeat center center;
+	background-size:cover;
+	text-align: center;
+}
+section#output2 h4{color:#fff;}
+section#output2 hr{background:#fff;}
+
+section#output3{
+	background:url(../image/3.design/graphic_9/graphic_9_output3_bg.jpg) no-repeat center center;
+	background-size:cover;
+	text-align: center;
+}
+section#output3 h4{color:#333;}
+section#output3 hr{background:#333;}

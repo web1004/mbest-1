@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<style>
+    #gallery{ 
+        width:1000px;
+        height:750px;
+        background:rgba(0,0,0,0.8);
+        position:relative;
+        margin:calc((100vh - 750px) / 2) auto;
+
+    }
+    .largeImg li{ /*모든 이미지 동일 위치 배치*/
+        display:none;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+    }
+    .largeImg li:first-child{display:block;}
+    /*최초 첫번째 이미지만 선노출*/ 
+    .thumbs{
+        position:absolute;
+        top:10px;	
+        left:10px;	
+    }
+    .thumbs li{
+        float:left;
+        margin-right:10px;
+        opacity:0.4;
+    }
+    .thumbs li:first-child{opacity:1;}
+    .thumbs li a img{
+        width:60px;
+        height:40px;
+    }
+    .left_btn{
+        position:absolute;
+        left:-90px;
+        top:340px;
+    }
+    .right_btn{
+        position:absolute;
+        right:-90px;
+        top:340px;
+    }
+    .material-icons-outlined{
+        color:#fff;
+        font-size:80px;
+        vertical-align: middle;
+    }
+    .material-icons-outlined:hover{
+        color:#468cff;
+        transition:0.2s all;
+    }
+</style>
+</head>
+<body>
+
+    <div id="gallery">	
+        <ul class="largeImg">
+            <li><img src="image/planning/planning1_2/planning1_2_1.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_2.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_3.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_4.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_5.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_6.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_7.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_8.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_9.jpeg" alt=""></li>
+            <li><img src="image/planning/planning1_2/planning1_2_10.jpeg" alt=""></li>
+        </ul>
+        <ul class="thumbs">
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_1.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_2.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_3.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_4.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_5.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_6.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_7.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_8.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_9.jpeg" alt=""></a></li>
+            <li><a href="#none"><img src="image/planning/planning1_2/planning1_2_10.jpeg" alt=""></a></li>
+        </ul>
+
+        <!--좌우버튼-->
+        <a href="#none" class="left_btn"><span class="material-icons-outlined">arrow_circle_left</span></a>
+        <a href="#none" class="right_btn"><span class="material-icons-outlined">arrow_circle_right</span></a>
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/planning_sub.js"></script>
+</body>
+</html>

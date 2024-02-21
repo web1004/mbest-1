@@ -1,0 +1,129 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+div.nav_open{
+    position:fixed;
+    z-index:9999;
+    top:25px;
+    left:10px;
+    cursor:pointer;
+}
+
+/*햄버거모양*/
+div.nav_open span{
+    display:block;
+    width:25px;
+    height:2px;
+    background:#fff;
+}
+div.nav_open span:before{
+    content:'';
+    display:block;
+    width:35px;
+    height:2px;
+    background:#fff;
+    transform:translateY(-10px);
+}
+div.nav_open span:after{
+    content:'';
+    display:block;
+    width:20px;
+    height:2px;
+    background:#fff;
+    transform:translateY(8px);
+}
+
+/*네비게이션*/
+nav{
+    /* display:none; */
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:-100%;
+    background:#000;
+}
+nav .nav_close{
+    float:right;
+    padding:5% 5% 0;
+}
+nav .nav_close span.material-icons{
+    font-size:48px;
+    font-size:3rem;
+    cursor:pointer;
+}
+nav>ul{
+    clear:both;
+    margin:0 10%;
+    /* background:url(../image/masterpiece-ga9c923b34_1280.jpg) no-repeat right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent; */
+}
+nav>ul>li{
+    font-size:48px;
+    font-size:3rem;
+    font-weight: 100;
+    /* border:1px solid red; */
+    margin-bottom:1%;
+    margin-left:-100%;
+    
+}
+nav>ul>li:hover{
+    font-weight:500;
+    color:rgb(218,178,80);
+}
+.active_menu{color:rgb(218,178,80);}
+
+nav footer{
+    position:absolute;
+    bottom:5%;
+    left:10%;
+    right:10%;
+    font-size:10px;
+    font-size:0.625rem;
+    color:#999;
+
+}
+nav>footer>ul>li{
+    float:left;
+    font-size:16px;
+    font-size:1rem;
+    margin:0 10px 20px 0px;
+}
+nav>footer>ul>li:hover{color:#fff;}
+nav footer address{
+    clear:both;
+    font-style: normal;
+}
+
+header{
+    position:fixed;
+    z-index:1000;
+    top:0;
+    width:inherit;
+    height:50px;
+    text-align: center;
+    overflow: hidden;
+}
+header h1#logo{
+    font-size:24px;
+    font-size:1.5rem;
+    font-family: 'Scheherazade';
+}
+header h1#logo a{
+    display: inline-block;
+}
+header h1#logo a span{
+    display:block;
+    /* position:absolute; */
+    width:fit-content;
+    font-size:16px;
+    font-size:1rem;
+    margin:-15px auto;
+    font-family: 'Ephesis';
+}

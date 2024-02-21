@@ -1,0 +1,76 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: INK;
+    src: url(../font/INKLIPQUID.woff);
+}
+@font-face {
+    font-family:NanumBarunGothic;
+    src: url(../font/NanumBarunGothic.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicBold;
+    src: url(../font/NanumBarunGothicBold.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicLight;
+    src: url(../font/NanumBarunGothicLight.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicUltraLight;
+    src: url(../font/NanumBarunGothicUltraLight.woff);
+}
+
+body{
+    color:#333;
+    font-family: NanumBarunGothicLight;
+    font-size:16px;
+}
+/*스크롤바 위치확인*/
+/* #txt1{position:fixed;top:10px;right:10px;z-index: 999;} */
+
+
+
+/*___비주얼___*/
+section{
+    width:1280px;
+    margin:0 auto;
+}
+
+section h2{
+    font-size:26px;
+    font-family:NanumBarunGothicBold;
+    text-align: center;
+    padding:150px 0 50px;
+}
+section>p{margin:0 20px;}
+section>p>span{
+    display:block;
+    margin:10px;
+}
+.section_list{
+    border:1px solid #000;
+    margin:30px 50px 50px;
+}
+.section_list ul{
+    padding:20px;
+    line-height:34px;
+}
+.section_list ul li a:hover{
+    color:rgb(27, 61, 255);
+    font-family:NanumBarunGothic;
+}
+
+.section_contents{
+    margin:10px 10px 100px 10px;
+}
+.section_contents dl dt{
+    font-family:NanumBarunGothic;
+    padding-top:60px;
+}
+.section_contents dl dd{
+    margin:20px;
+    font-size:14px;
+    line-height:20px;
+}

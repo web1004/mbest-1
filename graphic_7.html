@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/graphic_7.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+
+        <nav id="navi">
+          <h1 class="indent">logo</h1>
+          <ul class="main-nav">			
+            <li><a href="#concept" class="scroll">Concept</a></li>
+            <li><a href="#output" class="scroll">Output</a></li>
+          </ul>
+        </nav>
+
+        <section id="visual" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h3>
+                    <span>Redesign</span>
+                    화장품 프로모션 배너 
+                    <span>2D Grapic Design</span>
+                </h3>
+            </div>
+        </section>
+        <section id="concept" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div class="overview_text clear">
+                    <h4>Overview</h4>
+                    <div>
+                        화장품 배너 예제 시안을 빛의 스펙트럼으로 제품을 강조시키면서, 카피라이트 문구 내용에 컨셉이 더 부합하도록 리뉴얼 디자인하였습니다.
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>작업 기여도</li>
+                                    <li><div class="work_range"><div>개인작업 100%</div></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>작업 프로그램</li>
+                                    <li><img src="image/3.design/photoshop.png" alt="Ps" class="tool"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="analysis clear">
+                    <h4>Analysis</h4>
+                    <fieldset>
+                        <legend>AS-IS</legend>
+                        <img src="image/3.design/graphic_7/graphic_7_asis.jpeg" alt="디자인아트 스킨 재생 프로그램 365 daily care">
+                    </fieldset>
+                    <fieldset>
+                        <legend>TO-BE</legend>
+                        <ul>
+                            <li>제품 패키지의 메인 컬러 <span>#4b316c</span> 유지</li>
+                            <li><span>Copy Writing</span>'고농축 앰플로 주름개선&미백의 기능성 화장품'<br>빛 스펙트럼 그라데이션 효과로 기능 다양성 표현</li>
+                            <li>기존 시안의 분산되어있던 꾸밈요소를 제품 한 곳에 집중</li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <section id="output" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h4>Output</h4>
+                <hr>
+                <ul>
+                    <li><img src="image/3.design/graphic_7/graphic_7_output.jpeg" alt="디자인아트 스킨 재생 프로그램 365 daily care"></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- Parallax Script-->
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+	<script>
+		$(function() {
+      $('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+      
+      $(window).resize(function(){
+        $('.container').width($(window).width()).height($(window).height());
+        $('.content').each(function(){
+          $(this).css('margin-left',($(this).width()/2 * -1) + 'px').css('margin-top',($(this).height()/2 * -1) + 'px');
+        });
+      });
+
+      setTimeout(function(){
+        $(window).resize()}, 1000);      
+
+      $('.bg-holder').parallaxScroll({
+        friction:0.3
+      });
+
+			$('.icon img').hover(function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_over.png'));				
+			}, function() {
+				$(this).attr('src', $(this).attr('src').replace('_over.png', '.png'));
+			});      
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+﻿@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family:'NanumBarunGothic';
+    src: url("../font/NanumBarunGothic.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicBold';
+    src: url("../font/NanumBarunGothicBold.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicLight';
+    src: url("../font/NanumBarunGothicLight.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicExtraLight';
+    src: url("../font/NanumBarunGothicUltraLight.woff") format('woff'); 
+}
+
+/*Typo*/
+@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Lato:wght@400;700&family=Lora:wght@700&display=swap');
+
+
+#wrap{
+	background:#F2F2F2;
+	color:#333;
+	font-family: 'NanumBarunGothic';
+	font-weight:300;
+	font-size:16px;
+}
+
+/*____________________________________원페이지 탑메뉴*/
+#navi.slideUp {
+	transform: translateY(-100%);
+	transition:all 0.3s;
+}
+
+#navi {
+	background:#f2f2f26b;
+	position:fixed;	
+	width:100vw;
+	z-index:10000;
+}
+#navi h1 {
+	float:left;
+	margin:15px 50px 0;
+	width:40px;
+	height:40px;
+	background:url(../image/3.design/logo_black.png) no-repeat center center;
+	background-size:contain;
+}
+.main-nav {
+	position:relative;
+	float:left;
+	height:60px;
+	margin:10px 0 0 50px;
+}
+.main-nav li {
+	list-style:none;	
+	display:inline-block;
+	margin:12px 30px;
+}
+.main-nav a {
+	font-family:Arial;
+	font-size:20px;
+	text-decoration: none;
+}
+
+/*____________________________________공통적용 사항*/
+.container {
+	min-height:730px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	margin:0;
+}
+.bg-holder{
+  width:100%;
+  height:100%;
+}
+
+.section_in{
+	position:relative;
+	width:1280px;
+	height:800px;
+	padding:calc((100vh - 800px)/2) 0;
+	margin:0 auto;
+	/* border:1px solid yellow; */
+}
+h4{
+	font-size:40px;
+	font-family: 'Righteous', cursive;
+}
+hr{
+	width:50px;
+	height:5px;
+	border:none;
+}
+
+/*____________________________________비주얼*/
+section#visual{
+	background:url(../image/3.design/ui_1/ui_1_title.jpg) center center no-repeat;
+	background-size:cover;
+}
+
+/*개요*/
+#visual .visual_in_left{
+	padding:250px 20px 50px 40px;
+	width:500px;
+	height:530px;
+}
+#visual .visual_in_left img.logo{
+	height:35px;
+}
+#visual .visual_in_left h3{
+	font-size:36px;
+	font-family: 'NanumBarunGothicBold';
+	margin:10px 0 50px;
+}
+#visual .visual_in_left h3 span{
+	font-size:20px;
+	font-weight:100;
+	margin-left: 20px;
+	font-family: 'NanumBarunGothicLight';
+}
+/* #visual .visual_in_left .overview_text{margin-left:20px;} */
+#visual .visual_in_left .overview_text h4{color:#999;}
+#visual .visual_in_left .overview_text hr{
+	background:#999;
+	margin:10px 10px 20px;
+}
+#visual .visual_in_left .overview_text>div{
+	line-height:36px;
+	font-size:18px;
+}
+#visual .visual_in_left .overview_text>ul{
+	margin-top:20px;
+	font-size:16px;
+	line-height:30px;
+}
+#visual .visual_in_left .overview_text>ul>li{
+	float:left;
+	margin-right:20px;
+}
+#visual .visual_in_left .overview_text>ul>li>ul>li{
+	float:left;
+	margin-right:10px;
+}
+#visual .visual_in_left .overview_text>ul>li>ul>li>div.work_range{
+	width:180px;
+	height:25px;
+	border:1px solid #999;
+	border-radius: 30px;
+}
+.work_range div{
+	width:176px;
+	height:21px;
+	background:#999;
+	color:#fff;
+	line-height:21px;
+	text-align: center;
+	border-radius: 30px;
+	margin:2px 2px;
+	animation: work_range 1s 1s;
+	overflow: hidden;
+}
+@keyframes work_range {
+	0%{width:0;opacity:0;}
+}
+#visual .visual_in_left .overview_text>ul>li>ul>li>img.tool{
+	width:30px;
+	height:30px;
+	margin-right:5px;
+}
+
+ul.device_mobile{
+	width:700px;
+	position:absolute;
+	bottom:200px;
+	right:0px;
+}
+ul.device_mobile li{
+	float:left;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+ul.device_mobile li:first-child{z-index:4}
+ul.device_mobile li:first-child img{height:350px;}
+ul.device_mobile li img{height:320px;}
+ul.device_mobile li:nth-child(2){z-index:3;bottom:20px;left:130px;animation: mobile 0.4s;}
+ul.device_mobile li:nth-child(3){z-index:2;bottom:20px;left:230px;animation: mobile 0.7s;}
+ul.device_mobile li:nth-child(4){z-index:1;bottom:20px;left:330px;animation: mobile 0.9s;}
+
+@keyframes mobile{
+	0%{bottom:20px;left:30px;opacity:0;}
+}
+
+/*____________________________________01 홈*/
+section#home{
+	background:url(../image/3.design/ui_1/ui_1_1_bg.jpg) center center no-repeat;
+}
+#home div div{
+	position:absolute;
+	right:0;
+	width:100%;
+	height:300px;
+	text-align: right;
+}
+#home div div h4{
+	padding:70px 30px 0px 0px;
+}
+#home div div hr{
+	display: inline-block;
+	background:#333;
+	margin:10px 30px;
+}
+#home div div dl{
+	padding-right:30px;
+	line-height: 30px;
+}
+#home div div dl dt{
+	font-family:'NanumBarunGothicBold';
+	font-size:24px;
+}
+#home div div dl dd:nth-of-type(1){
+	font-size:14px;
+	margin:10px 0;
+}
+#home div div dl dd:nth-of-type(2){
+	line-height:26px;
+	font-family:'NanumBarunGothicExtraLight';
+}
+
+
+/*____________________________________02 그래픽*/
+section#graphic{
+	background:url(../image/3.design/ui_1/ui_1_2_bg.jpg) center center no-repeat;
+}
+#graphic div div{
+	position:absolute;
+	right:0;
+	width:100%;
+	height:300px;
+}
+#graphic  div div h4{
+	padding:70px 0px 0px 30px;
+}
+#graphic div div hr{
+	display: inline-block;
+	background:#333;
+	margin:10px 30px;
+}
+#graphic div div dl{
+	padding-left:30px;
+	line-height: 30px;
+}
+#graphic div div dl dt{
+	font-family:'NanumBarunGothicBold';
+	font-size:24px;
+}
+#graphic div div dl dd{
+	font-size:14px;
+	margin:10px 0;
+}
+
+/*____________________________________03 color_typo*/
+section#color_typo{
+	background:url(../image/3.design/ui_1/ui_1_3_bg.jpg) center center no-repeat;
+}
+#color_typo div div{
+	position:absolute;
+	right:0;
+	width:100%;
+	height:300px;
+}
+#color_typo  div div h4{
+	padding:70px 0px 0px 30px;
+	float:left;
+}
+#color_typo div div hr{
+	width:5px;
+	height:40px;
+	display: inline-block;
+	background:#333;
+	margin:80px 30px;
+	float:left;
+}
+#color_typo div div dl{
+	padding-left:30px;
+	line-height: 30px;
+	margin-top:70px;
+}
+#color_typo div div dl dt{
+	font-family:'NanumBarunGothicBold';
+	font-size:24px;
+}
+#color_typo div div dl dd{
+	font-size:14px;
+	margin:10px 0;
+}
+
+/*____________________________________04 function*/
+section#function{
+	background:url(../image/3.design/ui_1/ui_1_4_bg.jpg) center center no-repeat;
+}
+#function div div{
+	position:absolute;
+	right:0;
+	width:100%;
+	height:300px;
+}
+#function div div h4{
+	padding:70px 0px 0px 30px;
+}
+#function div div hr{
+	display: inline-block;
+	background:#333;
+	margin:10px 30px;
+}
+#function div div p{padding-left:30px;}
+
+/*____________________________________05 flow*/
+section#flow{
+	color:rgba(255,255,255,0.8);
+	background:url(../image/3.design/ui_1/ui_1_5_bg.jpg) center center no-repeat;
+}
+#flow div div{
+	position:absolute;
+	right:0;
+	width:100%;
+	height:300px;
+	text-align:center;
+}
+#flow div div h4{
+	padding:70px 0px 0px 30px;
+}
+#flow div div hr{
+	display: inline-block;
+	background:rgba(255,255,255,0.8);
+	width:100%;
+	height:1px;
+	margin:10px 0;
+}
+#flow div div p{padding-left:30px;}

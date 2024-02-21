@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/ui_8.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+        <nav id="navi">
+          <h1 class="indent">logo</h1>
+          <ul class="main-nav">			
+            <li><a href="#concept" class="scroll">Concept</a></li>
+            <li><a href="#output" class="scroll">Output</a></li>
+          </ul>
+        </nav>
+
+        <section id="visual" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div class="visual_in_left">
+                    <img src="image/3.design/ui_8/ui_8_logo.png" alt="mariwhale cafe logo" class="logo">
+                    <h3>Gillette <span>UI/UX Design</span></h3>
+                    <div class="overview_text clear">
+                        <h4>Overview</h4>
+                        <hr>
+                        <div>
+                            선명한 색상의 포인트 컬러 강조와 선적인 요소의 동적인 배치를 활용하여, 질레트 제품의 매끄럽고 정교한 특징을 표현하였습니다.  
+                        </div>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>작업 기여도</li>
+                                    <li><div class="work_range"><div>개인작업 100%</div></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>작업 프로그램</li>
+                                    <li><img src="image/3.design/photoshop.png" alt="Ps" class="tool"><img src="image/3.design/illustrator.png" alt="Ai" class="tool"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="device_computer"></div>
+            </div>
+        </section>
+        <section id="concept" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div>
+                    <h4>Concept</h4>
+                    <hr>
+                </div>
+                <dl class="concept_in_left">
+                    <dt>Analysis</dt>
+                    <dd>정교하고 날카로우면서 부드러운 쉐이빙 제품의 특징을 자랑하는 면도기 대표 브랜드입니다.</dd>
+                    <dt>Design Concept</dt>
+                    <dd>
+                        두꺼운 선적인 요소에 높은 색채의 포인트 색상, 명암 대비가 뚜렷한 광원 효과를 적용하여 선명함을 강조하고, 오브젝트에 모션블러 효과를 추가하여 동적인 움직임을 보완했습니다.
+                    </dd>
+                    <dt>Keyword</dt>
+                    <dd>
+                        <ul>
+                            <li># 날카로움</li>
+                            <li># 정교함</li>
+                            <li># Smooth</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="concept_in_right">
+                    <dt>Mood Board</dt>
+                    <dd class="mood_board"></dd>
+                    <dt>Color</dt>
+                    <dd>
+                        <ul>
+                            <li>#0066FF</li>
+                            <li>#FFCC33</li>
+                            <li>#000000</li>
+                        </ul>
+                    </dd>
+                    <dt>Typo</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>KoPub돋움체_Pro Bold</li>
+                                    <li>KoPub돋움체_Pro Medium</li>
+                                    <li>KoPub돋움체_Pro Light</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="output">
+            <div class="section_in">
+                <h4>Output</h4>
+                <hr>
+                <div>
+                    Main Display(width * height) : 1000px * 800px
+                </div>
+                <ul class="output_detail_left">
+                    <li class="output_subtitle">MainPage</li>
+                    <li class="output_subtitle">TopMenu</li>
+                </ul>
+                <ul class="output_img">
+                    <li><img src="image/3.design/ui_8/ui_8_output.jpg" alt="메인페이지"></li>
+                    <li><img src="image/3.design/ui_8/ui_8_output_menu.jpg" alt="메인페이지"></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- Parallax Script-->
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+	<script>
+		$(function() {
+      $('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+      
+      $(window).resize(function(){
+        $('.container').width($(window).width()).height($(window).height());
+        $('.content').each(function(){
+          $(this).css('margin-left',($(this).width()/2 * -1) + 'px').css('margin-top',($(this).height()/2 * -1) + 'px');
+        });
+      });
+
+      setTimeout(function(){
+        $(window).resize()}, 1000);      
+
+      $('.bg-holder').parallaxScroll({
+        friction:0.3
+      });
+
+			$('.icon img').hover(function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_over.png'));				
+			}, function() {
+				$(this).attr('src', $(this).attr('src').replace('_over.png', '.png'));
+			});      
+		});
+	</script>
+
+</body>
+</html>

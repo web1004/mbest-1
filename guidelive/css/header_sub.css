@@ -1,0 +1,175 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: INK;
+    src: url(../font/INKLIPQUID.woff);
+}
+@font-face {
+    font-family:NanumBarunGothic;
+    src: url(../font/NanumBarunGothic.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicBold;
+    src: url(../font/NanumBarunGothicBold.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicLight;
+    src: url(../font/NanumBarunGothicLight.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicUltraLight;
+    src: url(../font/NanumBarunGothicUltraLight.woff);
+}
+
+body{
+    color:#333;
+    font-family: NanumBarunGothicLight;
+    font-size:18px;
+}
+
+
+/*_____________________________________________ 헤더*/
+#header_in{
+    width:100%;
+    min-width:1280px;
+    height:50px;
+    position:fixed;
+    z-index:100;
+}
+#header_in nav{
+    position:relative;
+    width:1280px;
+    margin:0 auto;
+}
+
+/*___로고___*/
+nav h1#logo{
+    font: italic 40px 'Lato';
+    font-weight: 700;
+    color:#ff7e42;
+    line-height: 50px;
+}
+nav h1#logo span{font-weight:900;}
+
+/*___네비게이션___*/
+nav .gnb_btn{
+    position:absolute;
+    top:10px;
+    right:0px;
+    z-index:1000;
+    display:block;
+    width:40px;
+    height:30px;
+    background:none;
+    outline:none;
+    margin:0;
+    cursor:pointer;
+}
+.gnb_btn span{
+    position: absolute;
+    width:80%;
+    height:3px;
+    background:#ff7e42;
+    content:'';
+}
+.gnb_btn span:first-child{transform:translateY(0px);}
+.gnb_btn span:nth-child(2){top:13px;}
+.gnb_btn span:last-child{transform:translateY(26px);}
+
+/*햄버거바 - 제이쿼리 호출 클래스*/
+.gnb_btn span:first-child.gnb_open{
+    transform:translateY(15px) rotate(135deg);
+    background-color:#ff7e42;
+    transition:all 0.3s;
+}
+.gnb_btn span:nth-child(2).gnb_open{opacity:0;} 
+.gnb_btn span:last-child.gnb_open{
+    transform:translateY(15px) rotate(-135deg);
+    background-color:#ff7e42;
+    transition:all 0.3s;
+}
+
+/*네비게이션 주메뉴*/
+.top_menu>.gnb{
+    position:fixed;
+    z-index:500;
+    top:0;
+    right:0;
+    height:100%;
+    width:25%;
+    background:#fff;
+    display:none;
+}
+.top_menu>.gnb>ul{
+    width:80%;
+    margin: 100px auto;
+}
+.top_menu>.gnb>ul>li{
+    font-family: 'Lato';
+    font-size:40px;
+    font-weight:300;
+    line-height:70px;
+    text-transform:uppercase;
+    color:#666;
+}
+.gnb ul li:nth-child(3) li{ font-family: NanumBarunGothicLight;}
+.gnb>ul>li>a:hover{
+    color:#ff7b0f;
+}
+
+
+.top_menu>.gnb>ul>li .material-icons{
+    font-size:50px;
+    vertical-align: middle;
+    color:#999;
+}
+.gnb>ul>li:hover .material-icons{
+    color:#ff7b0f;
+    transition:all 0.5s;
+}
+
+.gnb .gnb_sub{
+    font-size:28px;
+    line-height:50px;
+    text-indent:25px;
+    height:0;
+    overflow:hidden;
+}
+.gnb ul li:nth-child(1):hover .gnb_sub,
+.gnb ul li:nth-child(3):hover .gnb_sub{
+    height:100px;
+    transition: all 0.5s;
+}
+.gnb_sub li a:hover{
+    color:#ff7b0f;
+    font-weight:400;
+}
+
+.gnb div{
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:10px;
+}
+
+.gnb .facebook{
+    right:50px;
+    background: url(../image/0_gnb/social_btn1.png) no-repeat;
+    background-size:cover;
+}
+.gnb .facebook:hover{
+    transition:all 0.5s;
+    background: url(../image/0_gnb/social_btn1_hover.png) no-repeat;
+    background-size:cover;
+}
+.gnb .instagram{
+    right:10px;
+    background: url(../image/0_gnb/social_btn2.png) no-repeat;
+    background-size:cover;
+}
+.gnb .instagram:hover{
+    transition:all 0.5s;
+    background: url(../image/0_gnb/social_btn2_hover.png) no-repeat;
+    background-size:cover;
+}

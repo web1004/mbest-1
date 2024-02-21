@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>GuideLive 랜선투어 - People</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+<link rel="stylesheet" href="css/header_sub.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/footer.css"> 
+<link rel="stylesheet" href="css/tour.css">
+<link rel="shortcut icon" type="image/x-icon" href="image/short_logo.ico">
+</head>
+<body>
+    <!-- <p id="txt1">0</p> -->
+    <div id="chat_in">
+        <span class="material-icons chat_btn">textsms</span>
+        <div class="chat">
+            <div class="chat_title">
+                <p><span class="material-icons">remove_circle</span>부재중</p>
+                <p>1:1 문의<span class="material-icons">textsms</span></p>
+                <span class="material-icons chat_close">clear</span>
+            </div>            
+            <ul>
+                <li><span class="material-icons">support_agent</span></li>
+                <li>
+                    상담원이 부재중입니다. 상담시간은 평일 아침 9시부터 오후 6시까지입니다. 연락처와 문의사항을 남겨주시면 다시 연락드리겠습니다.
+                </li>
+            </ul>
+            <input type="hidden" value="" name="chat_talk" id="talk">
+            <ul id="talk_list"></ul>
+            <textarea id="talk_input" placeholder="문의사항을 남긴 후 엔터를 눌러주세요."></textarea>
+        </div>
+    </div>
+
+    <header>
+        <div id="header_in">
+            <nav>
+                <h1 id="logo"><a href="index.html"><span>G</span>uide<span>L</span>ive</a></h1>
+                <div class="top_menu">
+                    <span class="gnb_btn"><span></span><span></span><span></span></span>
+                    <div class="gnb">
+                        <ul>
+                            <li>about<span class="material-icons">expand_more</span>
+                                <ul class="gnb_sub">
+                                    <li><a href="our_story.html">Our Story</a></li>
+                                    <li><a href="people.html">People</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">service</a></li>
+                            <li>tour<span class="material-icons">expand_more</span>
+                                <ul class="gnb_sub">
+                                    <li><a href="information.html">이용안내</a></li>
+                                    <li><a href="tour.html">랜선투어</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                        <a href="https://www.facebook.com/guidelive.live/" target="_blank"><div class="facebook"></div></a>
+                        <a href="https://www.instagram.com/guidelive.kr/?hl=ko" target="_blank"><div class="instagram"></div></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="visual">
+            <div>
+                <h2>
+                    오직 여행의 본질에만 집중합니다.
+                </h2>
+                <p><a href="information.html">이용 안내</a></p>
+            </div>
+        </div>
+        <div id="section1">
+            <div class="section1_title">
+                <h3>랜선투어<span></span><span></span></h3>
+                <p>
+                    믿을 만한 전문 가이드들과 함께 천편일률 유사한 여행에서 탈피하여<br>
+                    취향과 라이프스타일 시대에 맞추어 새로운 여행을 만듭니다.
+                </p>
+            </div>
+            <div class="search_bar">
+                <input type="text" placeholder="여행지명을 입력하세요." name="search_tour">
+                <button><span class="material-icons">search</span></button>
+            </div>
+        </div>
+        <div id="section2">
+            <ul class="tour_list">
+                <li>
+                    <ul class="tour_content">
+                        <li><p>김진희 가이드의<br><span>영국 런던</span></p></li>
+                        <li>
+                            <p>
+                                영국 역사의 과거와 현재를 연결시키는 스토리텔링을 하고 싶어요. 
+                                런던의 명소들을 통해 현시점의 영국인들을 이해하고, 
+                                여행자인 우리에게도 어떤 의미인지 생각해볼 수 있는 기회를 준비했어요. 
+                                최대한 쉽게, 머리보다는 마음에 새겨지는 런던의 이야기를 들려드릴게요.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>정희태 가이드의<br><span>파리 워킹 투어</span></p></li>
+                        <li>
+                            <p>
+                                세상에서 가장 아름다운 도시 "Paris!"
+                                길을 걸으며 바라만 보고 있어도 사랑에 빠질것만 같은 낭만적인 장소입니다. 
+                                거기에 숨어있는 이야기와 이들의 삶의 이야기까지 곁들여진다면 이곳의 매력에 풍덩 빠지게 되실 겁니다. 
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>서인혁 가이드의<br><span>에스토니아 탈린</span></p></li>
+                        <li>
+                            <p>
+                                한국에 잘 알려지지 않은 탈린의 매력을 제대로 전하고 싶어요. 
+                                현대적인 신시가지와 달리 고풍스러운 올드타운은 구석구석 허투루 지나칠 곳이 없는 곳이죠. 
+                                당장은 함께 걸을 수 없어 아쉽지만 랜선투어를 통해 제가 사랑하는 탈린을 보여드릴게요.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>신이안,김수연 가이드의<br><span>체코 프라하</span></p></li>
+                        <li>
+                            <p>
+                                동화 속 마을 체코 프라하에 숨겨진 이야기를 들으며 
+                                아기자기한 골목을 걷다 보면 프라하와 사랑에 빠지게 될거에요!<br>
+                                프라하의 오늘, 생생한 현장감을 그대로 느껴보세요.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>이진희 가이드의<br><span>프라도 미술관 확장판</span></p></li>
+                        <li>
+                            <p>
+                                해마다 많은 이들이 프라도 미술관을 찾지만, 정작 그 작품들을 제대로 보지 못하고 나오시는 분들을 볼 때마다 늘 안타까웠어요. 
+                                대표작들을 중심으로 알면 보이는 즐거움을 선사해 드릴게요.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>제나,후니 가이드의<br><span>포르투갈 포르투</span></p></li>
+                        <li>
+                            <p>
+                                포르투갈은 한국에서도 한참 뜨고 있던 여행지였죠.
+                                유럽에서는 이미 많은 이들의 사랑을 받는 곳입니다. 포르투는 골목 사이로 들어갈 때 
+                                더욱더 빛을 발하는데요. 그간 제가 발견했던 포르투의 진면목을 이번 랜선투어를 통해 남김없이 전해드리겠습니다.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>권승완, 성예은 가이드의<br><span>스페인 바르셀로나</span></p></li>
+                        <li>
+                            <p>
+                                '지중해의 보석' 바르셀로나 안에는 피카소, 달리, 미로, 가우디 등 수많은 
+                                예술가들이 저마다 상상력을 풀어 놓았습니다. '한 번도 안 와본 사람은 있지만 
+                                한 번만 온 사람은 없다'라는 말처럼 바르셀로나가 지닌 다채로운 매력을 즐겁고 재미있게 전달해 드릴게요.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>김성모 가이드의<br><span>피카소 140주년<br>특별전</span></p></li>
+                        <li>
+                            <p>
+                                피카소의 인생사를 듣다 보면 그가 작품들에 얼마나 놀라운 이야기들을 담았는지 
+                                그리고 피카소는 천재라는 것을 알게 됩니다. 영화와 같은 파란만장한 피카소의 이야기가 시작됩니다.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>신기환 가이드의<br><span>내셔널 갤러리</span></p></li>
+                        <li>
+                            <p>
+                                단순한 미술관을 넘어 영국인들의 확고한 소신과 철학을 느낄 수 있는 
+                                내셔널 갤러리의 대표작들과 함께 자기만의 관점으로 미술을 감상하는 힘을 
+                                길러보는 것은 어떨까요?
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>이혜원 가이드의<br><span>스페인 세고비아</span></p></li>
+                        <li>
+                            <p>
+                                중세 시대의 아름다운 성이 있는 어느 마을로 시간 여행을 떠난 기분이 들지도 몰라요. 
+                                생생한 역사의 현장을 돌아보며 스페인을 더욱 깊게 느낄수도 있겠지요. 
+                                한편의 동화같은 마을, 세고비아를 제대로 바라볼 수 있도록 안내해 드리겠습니다.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>홍콩신짱 가이드의<br><span>홍콩 릴레이 투어</span></p></li>
+                        <li>
+                            <p>
+                                홍콩 여행에서 반드시 찾았던 랜드마크 같은 코스에서는 그 안에 보석처럼 
+                                숨어 있는 또 다른 매력을 발굴하고, 짧은 일정에 쫒겨 실제 여행 중 
+                                찾아가기 힘든 아웃도어 코스에서는 홍콩의 새로운 얼굴을 안내해 드릴게요.
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tour_content">
+                        <li><p>이은경 가이드의<br><span>파리 몽마르뜨</span></p></li>
+                        <li>
+                            <p>
+                                내가 진심으로 좋아하는 걸 다른 사람들도 똑같이 즐겼으면 좋겠다는 마음으로 늘 투어를 고민하고 있어요. 
+                                몽마르뜨는 그 중 1순위였고요. 예술, 역사, 풍경을 재미있게 풀어내서 한정되고 소중한 여행 시간을 가장 풍성하게 
+                                만들어드리고 싶어요. 
+                            </p>
+                            <span class="material-icons">support_agent</span>
+                            <div class="more_btn">자세히보기</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="top_btn">
+                <span class="material-icons">arrow_upward</span>
+                <span>TOP</span>
+            </div>
+
+            <div class="popup">
+                <div class="pop_body clear">
+                    <ul class="pop">
+                        <li>
+                            <img src="image/6_tour/content1.jpeg" alt="김진희 가이드의 영국 런던">
+                            <img src="image/6_tour/content1_2.jpeg" alt="김진희 가이드의 영국 런던">
+                            <img src="image/6_tour/content1_3.jpeg" alt="김진희 가이드의 영국 런던">
+                            <img src="image/6_tour/content1_4.jpeg" alt="김진희 가이드의 영국 런던">
+                            <img src="image/6_tour/content1_5.jpeg" alt="김진희 가이드의 영국 런던">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content2_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content2_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content2_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content2_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content2_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content3_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content3_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content3_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content3_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content3_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content4_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content4_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content4_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content4_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content4_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li><img src="image/6_tour/content5_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content5_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content5_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content5_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content5_5.jpeg" alt="투어상세페이지"></li>
+                        <li>
+                            <img src="image/6_tour/content6_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content6_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content6_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content6_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content6_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content7_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content7_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content7_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content7_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content7_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content8_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content8_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content8_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content8_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content8_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content9_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content9_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content9_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content9_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content9_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content10_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content10_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content10_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content10_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content10_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li>
+                            <img src="image/6_tour/content11_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content11_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content11_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content11_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content11_5.jpeg" alt="투어상세페이지">
+                        </li>
+                        <li><img src="image/6_tour/content12_1.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content12_2.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content12_3.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content12_4.jpeg" alt="투어상세페이지">
+                            <img src="image/6_tour/content12_5.jpeg" alt="투어상세페이지"></li>
+                    </ul>
+                    
+                    <ul class="m_btn">
+                        <li class="btn_close"><i class="material-icons">clear</i></li>
+                        <li class="left_btn"><i class="material-icons">keyboard_arrow_left</i></li>
+                        <li class="right_btn"><i class="material-icons">keyboard_arrow_right</i></li>
+                        <li class="g_page"><span>1</span> / <span>12</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer_in">
+            <div id="footer_logo"><span>G</span>uide<span>L</span>ive</div>
+            <ul>
+                <!-- <li><a href="#">국외여행 표준약관</a></li> -->
+                <li><a href="personal_data_management.html">개인정보 처리방침</a></li>
+                <li>개인정보보호책임자 김지형</li>
+            </ul>
+            <ul>
+                <li>(주)가이드라이브</li>
+                <li>서울특별시 중구 청계천로 100 시그니쳐타워 서관 10층</li>
+                <li>info@guidelive.kr</li>
+            </ul>
+            <ul>
+                <li>사업자등록번호 384-81-01454</li>
+                <li>통신판매업신고번호 제 2021-서울마포-1653</li>
+                <li>관광사업자 등록번호 2020-000069호</li>
+            </ul>
+            <p>당사는 서울보증보험주식회사 영업보증보험 및 기획여행 실시에 따른 보증보험 가입 되어있으며, AIG 전문직업(여행업자) 배상책임보험에 가입되어 있습니다.</p>
+            <p>일반여행업 영업보증보험 2억원 가입 (기획여행 실시에 따른 보증보험 5천만원 가입)</p>
+        </div>
+    </footer>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/header_sub.js"></script>
+    <script src="js/tour.js"></script>
+</body>
+</html>

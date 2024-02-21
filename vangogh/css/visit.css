@@ -1,0 +1,177 @@
+@import url(common.css);
+@import url(swiper.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+#pc{display:none;}
+#wrap{
+    min-width:320px;
+    width:100%;
+    max-width:480px;
+    /* height:100%; */
+    font-size:16px;
+    font-size: 1rem;
+    background:#222;
+    color:#fff;
+    font-family:'Noto Sans KR';
+    animation:back_color 1.5s ease-in;
+}
+@keyframes back_color {
+    0%{background:#000064;}
+}
+section span.line{
+    display:inline-block;
+    height:1px;
+    width:12%;
+    background:red;
+}
+section>span:first-child{
+    position:absolute;
+    top:15vh;
+    background:rgba(255,255,255,0.6);
+    left:0;
+    transform:rotate(50deg);
+}
+section>span:nth-child(2){
+    position:absolute;
+    top:15vh;
+    background:rgba(255,255,255,0.6);
+    right:0;
+    transform:rotate(-50deg);
+}
+section #title {
+    width:100%;
+    height:18vh;
+}
+section #title h2{
+    text-align: center;
+    padding-top:10vh;
+    font-weight:100;
+    font-size:36px;
+    font-size:2.25rem;
+    font-family:'Scheherazade';
+}
+
+section #intro{
+    width:80%;
+    margin:0 auto;
+}
+section #intro .gallery .thumbs a img{
+    width:calc((95.6% - 15px)/4);
+    padding:5px 2.5px;
+    filter:grayscale(1);
+}
+section #intro .gallery .thumbs a:first-child img{padding-left:0;}
+section #intro .gallery .thumbs a:last-child img{padding-right:0;}
+section #intro .gallery .thumbs a img.active{filter:grayscale(0);}
+
+section #intro h3{
+    color:rgb(218,178,80);
+    font-size:20px;
+    font-size:1.25rem;
+    font-weight:500;
+    margin:20px 0 0;
+}
+section #intro>p{
+    line-height: 28px;
+}
+section #intro>span{
+    display:block;
+    height:10vh;
+    width:1px;
+    margin:10px auto;
+    background:rgba(255,255,255,0.6);
+}
+
+section #location iframe{
+    width:100%;
+    height:25vh;
+}
+section #location .contact,section #location .transportation{width:80%;margin:0 auto;}
+section #location .contact p.address{
+    color:rgb(218,178,80);
+    font-weight:500;
+    font-size:20px;
+    font-size:1.25rem;
+    margin:10px 0;
+}
+section #location .contact p.address span{
+    color:rgba(255,255,255,0.8);
+    font-weight:100;
+    display:block;
+    font-size:12px;
+    font-size:0.75rem;
+}
+section #location .contact p.phone_num{
+    height:40px;
+    line-height:40px;
+    float:left;
+    font-size:24px;
+    font-size:1.5rem;
+    font-family: 'Poiret One';
+    font-weight:300;
+    letter-spacing: 5px;
+}
+section #location .contact a{
+    border-radius: 50%;
+    background-color: rgb(218,178,80);
+    float:right;
+    width:40px;
+    height:40px;
+    text-align: center;
+}
+section #location .contact a>span{
+    line-height:40px;
+}
+
+section #location .transportation{
+    margin-top:40px;
+    padding-bottom:10vh;
+}
+section #location .transportation h4{
+    font-size:20px;
+    font-size:1.25rem;
+    font-weight:500;
+    color:rgb(218,178,80);
+}
+section #location .transportation>ul>li{
+    font-weight:400;
+    text-align: center;
+}
+section #location .transportation>ul>li p{
+    font-weight:400;
+    border-bottom:1px solid rgba(255,255,255,0.6);
+    width:60%;
+    margin:10px auto;
+}
+section #location .transportation>ul>li p span{
+    font-size:40px;
+    font-size:2.5rem;
+    color:rgb(218,178,80);
+}
+section #location .transportation ul li ul.parking{
+    font-size:12px;
+    font-size:0.75rem;
+    font-weight:100;
+    color:rgba(255,255,255,0.6);
+    text-align: left;
+    margin:20px 0;
+}
+section #location .transportation ul li ul.parking li{list-style-type: disc;list-style-position:inside;}
+
+@media all and (min-width:481px){
+    #pc{
+        display:block;
+        width:100%;
+        height:100%;
+        background:#111;
+        text-align: center
+    }
+    div.vote{display:none;}
+    #wrap {display: none;}
+    header{display:none;}
+
+
+}

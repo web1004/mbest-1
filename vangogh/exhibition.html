@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi" name="viewport">
+<title>Exhibition - VAN GOGH INSIDE</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/exhibition.css">
+</head>
+<body>
+    <div id="pc"><img src="image/pc.png" alt="pc 안내"></div>
+ 
+    <div id="wrap">
+        <div class="nav_open"><span></span></div>
+        <nav>
+            <div class="nav_close"><span class="material-icons">close</span></div>
+            <ul>
+                <li><a href="intro.html">INTRO</a></li>
+                <li><a href="exhibition.html" class="active_menu">EXHIBITION</a></li>
+                <li><a href="ticket.html">TICKET</a></li>
+                <li><a href="visit.html">VISIT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+            <footer>
+                <ul>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul>
+                <address>(주)미디어앤아트<br>서울특별시 성동구 아차산로17길 49 A동 지하 1층 111호</address>
+                <p>&copy;2020 BY GROUNDSEESAW ALL RIGHTS RESEVED.</p>
+            </footer>
+        </nav>
+
+        <header>
+            <h1 id="logo">
+                <a href="index.html">VAN GOGH INSIDE<span>The Theater</span></a>
+            </h1>
+        </header>
+
+        <div class="black">
+            <span class="material-icons">swipe</span>
+            <p>7개의 전시 챕터를 넘겨서<p>확인 가능합니다.</p>
+            <img src="image/intro/person.png" alt="인물 실루엣">
+                
+        </div>
+
+        <section>
+            <span class="line"></span>
+            <span class="line"></span>
+            <div id="title">
+                <h2>EXIBITION</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3>Chapter 1</h3>
+                        <h2>Portrait<span>자화상</span></h2>
+                    </div>  
+                    <div class="swiper-slide">
+                        <h3>Chapter 2</h3>
+                        <h2>Zevenbergen<span>시작하는 발걸음</span></h2>
+                    </div>  
+                    <div class="swiper-slide">
+                        <h3>Chapter 3</h3>
+                        <h2>Nuenen<span>본질에 집중하다</span></h2>
+                    </div>  
+                    <div class="swiper-slide">
+                        <h3>Chapter 4</h3>
+                        <h2>Paris<span>색채로, 빛으로</span></h2>
+                    </div>  
+                    <div class="swiper-slide">
+                        <h3>Chpater 5</h3>
+                        <h2>Arles<span>아를의 해바라기, 광기의 시작</span></h2>
+                    </div>  
+                    <div class="swiper-slide">
+                        <h3>Chpater 6</h3>
+                        <h2>Saint Remy<span>사이프러스의 소용돌이 속으로</span></h2>
+                    </div>  
+                    <div class="swiper-slide">
+                        <h3>Chapter 7</h3>
+                        <h2>Auvers Sur Oise<span>모든 것이 끝났으면 좋겠다</span></h2>
+                    </div>  
+                </div>
+            </div>
+            <div id="view_point">
+                <span></span>
+                <h3>VIEW POINT</h3>
+                <ul class="point">
+                    <li class="point1">
+                        <span></span>
+                        <h4>1</h4>
+                        <div></div>
+                        <p>2015년 30만 관객이 찾았던<br>반 고흐 시리즈의 화려한 귀환</p>
+                    </li>
+                    <li class="point2">
+                        <span></span>
+                        <h4>2</h4>
+                        <div></div>
+                        <p>6m 이상의 스크린 상영을 위해 설계된<br> 영상, 음향 시스템이 제공하는 혁신적인 몰입감</p>
+                    </li>
+                    <li class="point3">
+                        <span></span>
+                        <h4>3</h4>
+                        <div></div>
+                        <p>어둠에서 빛을 찾아낸 반 고흐가<br>선사하는 커다란 위로</p>
+                    </li>
+                </ul>
+            </div>
+            <p class="caution">회차 별로 관람가능한 전시가 상이하오니 사전에 회차를 꼭 확인 부탁드립니다.</p>
+        </section>
+
+    </div>
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/vote.js"></script>
+    <script src="js/exhibition.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            effect: 'cube',
+            grabCursor: true,
+            cube: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94
+            }
+        });
+    </script>
+
+</body>
+</html>

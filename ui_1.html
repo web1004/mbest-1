@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/ui_1.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+        <nav id="navi">
+          <h1 class="indent">logo</h1>
+          <ul class="main-nav">			
+            <li><a href="#home" class="scroll">Interface</a></li>
+            <li><a href="#graphic" class="scroll">Graphic Style</a></li>
+            <li><a href="#color_typo" class="scroll">Concept</a></li>
+            <li><a href="#function" class="scroll">Function</a></li>
+            <li><a href="#flow" class="scroll">Flow</a></li>
+          </ul>
+        </nav>
+
+        <section id="visual" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div class="visual_in_left">
+                    <h3>KUKKA<span>Mobile UI/UX Design</span></h3>
+                    <div class="overview_text clear">
+                        <h4>Overview</h4>
+                        <hr>
+                        <div>
+                             꽃 주문 및 정기구독 배송을 하는 브랜드 KUKKA를 리뉴얼하여, 모바일 웹 UI/UX 디자인했습니다.
+                             화려한 색상의 꽃을 강조하기 위해 전반적인 색상은 무채색으로 구성하였고 뉴모피즘 디자인을 일부 사용하였습니다. 
+                        </div>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>작업 기여도</li>
+                                    <li><div class="work_range"><div>개인작업 100%</div></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>작업 프로그램</li>
+                                    <li><img src="image/3.design/photoshop.png" alt="Ps" class="tool"><img src="image/3.design/illustrator.png" alt="Ai" class="tool"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="device_mobile">
+                    <li><img src="image/3.design/ui_1/ui_1_title_1.png" alt=""></li>
+                    <li><img src="image/3.design/ui_1/ui_1_title_2.png" alt=""></li>
+                    <li><img src="image/3.design/ui_1/ui_1_title_3.png" alt=""></li>
+                    <li><img src="image/3.design/ui_1/ui_1_title_4.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section id="home" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div>
+                    <h4>01</h4>
+                    <hr>
+                    <dl>
+                        <dt>HOME</dt>
+                        <dd>Miniaml Interface</dd>
+                        <dd>
+                            사용자의 신속한 접근성을 위하여 메뉴 중 이용 빈도가 높은 4개만 추출하여 홈 화면을 구성하였습니다.<br>
+                            꽃 이미지의 칼라가 강조되도록 그 외 UI는 최소한의 색상 및 디자인을 적용하였습니다.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section id="graphic" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div>
+                    <h4>02</h4>
+                    <hr>
+                    <dl>
+                        <dt>Graphic Style</dt>
+                        <dd>NEUMORPHISM | UI 뉴모피즘 디자인 적용</dd>
+                        <dd>그레이톤 단일 색상의 픽토그램 아이콘 제작 및 활용을 통한 심플함을 추구하였습니다.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section id="color_typo" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div>
+                    <h4>03</h4>
+                    <hr>
+                    <dl>
+                        <dt>Color / Typography</dt>
+                        <dd>심플한 UI와 다채로운 꽃 이미지가 돋보이도록, 직선 형태의 타이포를 통한 대조효과를 주고 가독성을 높였습니다.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section id="function" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div>
+                    <h4>04</h4>
+                    <hr>
+                    <p>Function</p>
+                </div>
+            </div>
+        </section>
+        <section id="flow" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div>
+                    <h4>05</h4>
+                    <hr>
+                    <p>Flow Chart</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- Parallax Script-->
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+	<script>
+		$(function() {
+      $('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+      
+      $(window).resize(function(){
+        $('.container').width($(window).width()).height($(window).height());
+        $('.content').each(function(){
+          $(this).css('margin-left',($(this).width()/2 * -1) + 'px').css('margin-top',($(this).height()/2 * -1) + 'px');
+        });
+      });
+
+      setTimeout(function(){
+        $(window).resize()}, 1000);      
+
+      $('.bg-holder').parallaxScroll({
+        friction:0.3
+      });
+
+			$('.icon img').hover(function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_over.png'));				
+			}, function() {
+				$(this).attr('src', $(this).attr('src').replace('_over.png', '.png'));
+			});      
+		});
+	</script>
+
+</body>
+</html>

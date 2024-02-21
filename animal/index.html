@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>동물보호관리시스템</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+<link rel="stylesheet" href="css/animal_protection.css">
+<script>
+</script>
+</head>
+<body>
+    <div id="top_btn">
+        <a href="#">
+            <span class="material-icons">upgrade</span>
+        </a>
+    </div>
+    <div id="wrap">
+        <header class="clear">
+            <div id="header_in" class="clear">
+                <div id="gnb">
+                    <span class="material-icons">menu</span>
+                    <ul class="gnb_in">
+                        <li><a href="https://www.animal.go.kr/login/login_index.jsp" target="_blank">공무원/대행기관 로그인</a></li>
+                        <li><a href="https://www.animal.go.kr/aec/index.do" target="_blank">동물실험윤리위원회</a></li>
+                    </ul>
+                </div>
+                <ul id="util">
+                    <li><a href="https://www.animal.go.kr/front/awtis/login/login.do?menuNo=8000200006">로그인</a></li>
+                    <li><a href="https://www.animal.go.kr/front/awtis/join/joinInfo.do?menuNo=8000200008">회원가입</a></li>
+                    <li><a href="#">MyPage</a></li>
+                </ul>
+                <div id="logo">
+                    <h1><span>동물보호</span>관리시스템</h1>
+                    <p>ANIMAL PROTECTION MANAGEMENT SYSTEM</p>
+                </div>
+            </div>
+            <nav>
+                <div class="top_nav">
+                    <ul>
+                        <li>유실유기동물
+                            <ul class="sub_nav first">
+                                <li><a href="#">공고</a></li>
+                                <li><a href="#">보호중 동물</a></li>
+                                <li><a href="#">동물보호센터</a></li>
+                                <li><a href="#">입양안내</a></li>
+                                <li><a href="#">습득시안내</a></li>
+                                <li><a href="#">분실신고</a></li>
+                            </ul>
+                        </li>
+                        <li>동물등록
+                            <ul class="sub_nav">
+                                <li><a href="#">동물등록제란</a></li>
+                                <li><a href="#">등록동물검색</a></li>
+                                <li><a href="#">해외동물등록번호 조회</a></li>
+                                <li><a href="#">등록대행업체</a></li>
+                            </ul>
+                        </li>
+                        <li>농장동물
+                            <ul class="sub_nav">
+                                <li><a href="#">농장동물 복지개요</a></li>
+                                <li><a href="#">동물복지축산농장 인증제</a></li>
+                                <li><a href="#">동물복지축산농장 인증 절차</a></li>
+                                <li><a href="#">동물복지축산농장 인증 표시</a></li>
+                                <li><a href="#">동물복지축산농장 검색</a></li>
+                                <li><a href="#">동물복지축산농장 자료실</a></li>
+                                <li><a href="#">동물복지축산물 판매처</a></li>
+                                <li><a href="#">동물복지축산물 농장 직거래</a></li>
+                            </ul>
+                        </li>
+                        <li>TNR
+                            <ul class="sub_nav">
+                                <li><a href="#">길고양이 중성화 사업(TNR)</a></li>
+                                <li><a href="#">TNR 조회</a></li>
+                            </ul>
+                        </li>
+                        <li>정보마당
+                            <ul class="sub_nav">
+                                <li><a href="#">일반정보</a></li>
+                                <li><a href="#">건강정</a>보</li>
+                                <li><a href="#">동물보호 업무 부서</a></li>
+                                <li><a href="#">온라인 민원신청</a></li>
+                                <li><a href="#">동물등록 FAQ</a></li>
+                                <li><a href="#">무선식별장치 공급업체</a></li>
+                            </ul>
+                        </li>
+                        <li>업체정보
+                            <ul class="sub_nav">
+                                <li><a href="#">개요</a></li>
+                                <li><a href="#">동물병원</a></li>
+                                <li><a href="#">동물생산업</a></li>
+                                <li><a href="#">동물수입업</a></li>
+                                <li><a href="#">동물판매업</a></li>
+                                <li><a href="#">동물전시업</a></li>
+                                <li><a href="#">동물위탁관리업</a></li>
+                                <li><a href="#">동물운송업</a></li>
+                                <li><a href="#">동물미용업</a></li>
+                                <li><a href="#">동물장묘업</a></li>
+                            </ul>
+                        </li>
+                        <li>정책홍보
+                            <ul class="sub_nav">
+                                <li><a href="#">스템소개</a>시</li>
+                                <li><a href="#">법령 및 정책</a></li>
+                                <li><a href="#">교육안내</a></li>
+                                <li><a href="#">명예감사원</a></li>
+                                <li><a href="#">정보공개</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">홍보자료</a></li>
+                                <li><a href="#">동물학대방지</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="bg_box"></div>
+        </header>
+
+
+        <section>
+            <div id="section1" class="clear">
+                <div id="visual">
+                   <ul class="v_slide">
+                        <li class="v1">
+                            <p>동물복지<br><span>온라인 교육</span> 실시</p>
+                            <p>동물의 진정한 사육과 관리는<br> 동물보호 복지의 기본입니다.</p>
+                        </li>
+                        <li class="v2">
+                            <div>
+                            <p>버려진 동물을<br>발견하면<br><span>신고</span>하세요.</p>
+                            <p>누군가의 반려동물을 보호하고 계신가요?<br>
+                                공공장소를 떠돌거나 버려진 동물을 발견한 경우 관할 시ㆍ군ㆍ구청과 해당 유기동물 보호시설에 신고해야 합니다.</p>
+                            </div>
+                        </li>
+                        <li class="v3">
+                            <div>
+                                <p>동물등록은 <span>왜</span> 해야하나요?</p>
+                                <p>2개월령 이상의 개를 소유한 사람은 반드시 동물 등록을 해야합니다.<br>
+                                    단, 동물등록 업무를 대행할 수 있는 자를 지정할 수 없는 읍·면 및 도서 지역은 제외되며,<br>
+                                    등록하지 않을 경우 과태료가 부과됩니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="v_slide_btn">
+                        <li class="active">&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    <div class="playstop">
+                        <a href="#" class="stop">
+                            <span class="material-icons">pause</span>
+                        </a>
+                        <a href="#" class="play">
+                            <span class="material-icons">play_arrow</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://apms.epis.or.kr/" class="main_box1">
+                    <h3>동물복지 온라인교육</h3>
+                    <div class="box1_bg"></div>    
+                    <div class="circle1"></div>
+                    <img src="image/dog.png" alt="dog_character">
+                    <span class="material-icons">play_arrow</span>
+                    <div class="bar">
+                        <div class="playing"></div>
+                    </div>
+                </a>
+                <a href="https://www.animal.go.kr/front/awtis/mypage/registAnimalList.do?menuNo=8000300009" class="main_box2">
+                    <h3>동물등록증 출력하기</h3>
+                    <div class="box2_bg"></div>
+                    <div class="circle2"></div>
+                    <div class="circle2_in">
+                        <img src="image/license.png" alt="license 아이콘">
+                    </div>
+                </a>
+                <div class="main_box3">
+                    <h3>등록동물검색</h3>
+                    <div class="main_box3_in">
+                        <select>
+                            <option>소유주</option>
+                            <option>생년월일</option>
+                        </select>
+                        <input type="text">
+                        <select>
+                            <option>등록번호</option>
+                            <option>RFID</option>
+                        </select>
+                        <input type="text">
+                        <button><span class="material-icons">search</span>조회</button>
+                        <p>
+                            임의로 동물등록사항을 확인하는 것을 방지하기 위하여,<br>
+                            소유주의 개인정보를 추가입력하여야 동물등록사항 조회가 가능합니다.
+                        </p>
+                    </div>
+                    <div class="animal_search"><a href="https://eminwon.qia.go.kr/intro/Quarantine/MicronoSearch.jsp" target="_blank">해외등록한 동물을 조회하시나요?</a></div>
+                </div>
+            </div>
+
+            <div id="section2" class="clear">
+                <div id="board">
+                    <ul class="tab_menu">
+                        <li><a href="#board1" class="selected">반려동물 분실신고</a></li>
+                        <li><a href="#board2">동물등록 FAQ</a></li>
+                    </ul>
+                    <ul class=board_in>
+                        <li id="board1">
+                            <div class="btn_more">
+                                <a href="https://www.animal.go.kr/front/awtis/loss/lossList.do?menuNo=1000000057">
+                                <span class="material-icons">add</span>
+                                </a>
+                            </div>
+                            <ul class="list">
+                                <li ><p class="list_title">분실일자</p>
+                                    <ul class="contents">
+                                        <li>2021-09-08</li>
+                                        <li>2021-09-08</li>
+                                        <li>2021-09-08</li>
+                                        <li>2021-09-08</li>
+                                        <li>2021-09-06</li>
+                                        <li>2021-09-07</li>
+                                        <li>2021-09-06</li>
+                                    </ul>
+                                </li>
+                                <li><p class="list_title">분실장소</p>
+                                    <ul class="contents">
+                                        <li>집 앞</li>
+                                        <li>부산 진구 양성초등학교 인근</li>
+                                        <li>동백위브더제니스 109동</li>
+                                        <li>서울 은평구 역촌동 역말사거리 근처</li>
+                                        <li>전주시 완산구 원당동 256의11</li>
+                                        <li>경기도 안산시 단원구 초지동 그린빌18단지</li>
+                                        <li>경기도 포천시 내촌면 금강로3046번길 11 10 대문</li>
+                                    </ul>
+                                </li>
+                                <li><p class="list_title">품종</p>
+                                    <ul class="contents">
+                                        <li>비숑 프리제</li>
+                                        <li>포메라니안</li>
+                                        <li>뱅갈</li>
+                                        <li>기타</li>
+                                        <li>진도견</li>
+                                        <li>보스턴 테리어</li>
+                                        <li>웰시코기 펨브로..</li>
+                                    </ul>
+                                </li>
+                                <li><p class="list_title">성별</p>
+                                    <ul class="contents">
+                                        <li>암컷</li>
+                                        <li>암컷</li>
+                                        <li>수컷</li>
+                                        <li>수컷</li>
+                                        <li>암컷</li>
+                                        <li>암컷</li>
+                                        <li>수컷</li>
+                                    </ul>
+                                </li>
+                                <li><p class="list_title">&nbsp;</p>
+                                    <ul class="contents link">
+                                        <li><a href="#">자세히보기</a></li>
+                                        <li><a href="#">자세히보기</a></li>
+                                        <li><a href="#">자세히보기</a></li>
+                                        <li><a href="#">자세히보기</a></li>
+                                        <li><a href="#">자세히보기</a></li>
+                                        <li><a href="#">자세히보기</a></li>
+                                        <li><a href="#">자세히보기</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="board2">
+                            <div class="btn_more">
+                                <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">
+                                    <span class="material-icons">add</span>
+                                </a>
+                            </div>
+                            <ul>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">등록대상동물의 범위는?</a></li>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">동물등록신청은 어디서 하나요?</a></li>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">동물등록증 출력은 어떻게 하나요?</a></li>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">소유자가 변경된 경우는 어떻게 하나요?</a></li>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">등록신청 후 처리기간은 얼마나 걸리나요?</a></li>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">소유자의 주소가 변경된 경우는 어떻게 하나요?</a></li>
+                                <li><span class="material-icons">help</span> <a href="https://www.animal.go.kr/front/awtis/faq/faqList.do;jsessionid=kbgmfLtXtBbClA4R38ciiBPMsGpww4WUkgYyRf6Gch85uhjkpZxiMzY2p7mLvkP8.aniwas2_servlet_front?menuNo=5000000016">등록할 때 본인이 가지 않아도 등록할 수 있나요?</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="protection_img">
+                    <div class="headstyle2">
+                        <span>보호중</span> 동물
+                        <div class="btn_more2"> <a href="#"><span class="material-icons">add</span></a></div>
+                    </div>
+                    <span class="material-icons slide_btn prev">chevron_left</span>                        
+                    <div class="image_slide">
+                        <ul>
+                            <li><a href="#"><img src="image/animal09.jpg" alt="animal09"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal01.jpg" alt="animal01"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal02.jpg" alt="animal02"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal03.jpg" alt="animal03"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal04.jpg" alt="animal04"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal05.jpg" alt="animal05"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal06.jpg" alt="animal06"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal07.jpg" alt="animal07"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                            <li><a href="#"><img src="image/animal08.jpg" alt="animal08"><p>접수일자 : 21-09-06</p></a><span></span></li>
+                        </ul>
+                    </div>
+                    <span class="material-icons slide_btn next">chevron_right</span>
+                </div>
+            </div>
+
+            <div id="section3" class="clear">
+                <ul class="bg">
+                    <li class="bg01"></li>
+                    <li class="bg02"></li>
+                    <li class="bg03"></li>
+                    <li class="bg04"></li>
+                </ul>
+                <ul class="textbox">
+                    <li>
+                        <h4>반려동물입양<br><span>안내</span></h4>
+                        <div class="menu_block">
+                        <a href="https://www.animal.go.kr/front/community/show.do?boardId=contents&seq=53&menuNo=1000000058"><div class="btn_move">바로가기</div></a>
+                        <p>새식구를 맞이하는 것은 물론 생명을 구했다는 자부심으로 가슴이 뿌듯해집니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>동물보호센터<br><span>검색</span></h4>
+                        <div class="menu_block">
+                            <a href="https://www.animal.go.kr/front/awtis/institution/institutionList.do?menuNo=1000000059"><div class="btn_move">바로가기</div></a>
+                            <p>도물보호센터 및 동물병원 근무시간은 9시부터 18시입니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>동물등록대행업체<br><span>검색</span></h4>
+                        <div class="menu_block">
+                            <a href="https://www.animal.go.kr/front/awtis/record/recordAgencyList.do?menuNo=2000000002"><div class="btn_move">바로가기</div></a>
+                            <p>동물등록대행업체 현황과 무선식별장치의 제품명, 판매가격을 확인할 수 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>동물복지축산농장<br><span>검색</span></h4>
+                        <div class="menu_block">
+                            <a href="https://www.animal.go.kr/front/awtis/certification/certificationList.do?menuNo=3000000012"><div class="btn_move">바로가기</div></a>
+                            <p>동물복지 축산농장인증제를 통해 동물들의 복지수준을 높일 수 있고
+                                소비자는 인증번호와 마크를 통해 동물복지 축산물을 쉽게 확인할 수 있습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="section4" class="clear">
+                <ul>
+                    <li class="sec4_list">
+                        <ul class="sec4_menu list01">
+                            <li>
+                                <span class="material-icons">assignment_turned_in</span> 동물복지농장 인증절차
+                            </li>
+                            <li>
+                                <p>높은 수준의 동물복지 기준에 따라 인도적으로 동물을 사육하는<br>
+                                    소 · 돼지 · 닭 · 오리농장 등에 대해 국가에서 인증하고 인증농장에서<br>
+                                    생산되는 축산물에 '동물복지 축산농장 인증마크'를 표시하는 제도입니다.</p>
+                                <p class="btn_detail"><a href="https://www.animal.go.kr/front/community/show.do?boardId=contents&seq=170&menuNo=3000000019">자세히보기 &gt;</a></p>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li class="sec4_list">
+                        <ul class="sec4_menu list02">
+                            <li>
+                                <span class="material-icons">switch_account</span> 동물보호업무부서 검색
+                            </li>
+                            <li>
+                                <p>각 시군구 별 동물보호 업무 부서 안내입니다.<br>
+                                (담당기관 / 담당부서 / 전화번호)</p>
+                                <p class="btn_detail"><a href="https://www.animal.go.kr/front/awtis/relevant/relevantList.do?menuNo=5000000014">자세히보기 &gt;</a></p>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="clear">
+            <div id="footer_in">
+                <div class="footerL">
+                    <div class="fotter_logo"><img src="image/footer_logo.png" alt="footer_logo"></div>
+                    <ul>
+                        <li><a href="#">시스템소개</a></li>
+                        <li><a href="#">저작권 정책</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <address>
+                        39660 경상북도 김천시 혁신8로 177(율곡동)전화번호 : 1577-0954 (시스템 장애 시 054-810-8613)<br>
+                        Copyright by Animal and Plant Quarantine Agency. All Rights Reserved.
+                    </address>
+                </div>
+                <div class="footerR">
+                    <h6>동물보호 상담센터</h6>
+                    <h5>1577-0954</h5>
+                    <p><span class="material-icons">construction</span>시스템 장애: 054-810-8613</p>
+                    <p><span class="material-icons">alarm_on</span>상담시간: 평일 9:00~18:00</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/animal.js"></script>
+    
+    <!-- <div class="colortest">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+</body>
+</html>

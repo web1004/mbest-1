@@ -1,0 +1,297 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: INK;
+    src: url(../font/INKLIPQUID.woff);
+}
+@font-face {
+    font-family:NanumBarunGothic;
+    src: url(../font/NanumBarunGothic.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicBold;
+    src: url(../font/NanumBarunGothicBold.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicLight;
+    src: url(../font/NanumBarunGothicLight.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicUltraLight;
+    src: url(../font/NanumBarunGothicUltraLight.woff);
+}
+
+body{
+    color:#333;
+    font-family: NanumBarunGothicLight;
+    font-size:18px;
+}
+/*스크롤바 위치확인*/
+/* #txt1{position:fixed;top:10px;right:10px;z-index: 999;} */
+
+
+
+/*___비주얼___*/
+section #visual{
+    width:100%;
+    min-width:1280px;
+    height:500px;
+    background:url(../image/4_service/visual.jpg) center center no-repeat;
+    background-size:cover;
+}
+section #visual div{
+    width:1280px;
+    margin:0 auto;
+}
+#visual div h2{
+    height:300px;
+    line-height: 500px;
+    font-family:NanumBarunGothicBold;
+    font-size:46px;
+    font-weight:100;
+    text-align: center;
+    color:#fff;
+}
+#visual div p{
+    padding:20px;
+    width:120px;
+    height:10px;
+    font-size:16px;
+    font-weight: 900;
+    line-height: 16px;
+    border:1px solid #333;
+    border-radius: 30px;
+    margin:0 auto;
+    text-align: center;
+    cursor:pointer;
+}
+#visual div p:hover{
+    background: rgb(27, 61, 255);
+    color:#fff;
+    border:none;
+    transition: all 0.2s;
+}
+
+/*___섹션___*/
+section #section1{
+    width:100%;
+    /* height:2000px; */
+    margin:0 auto;
+}
+/*섹션 제목*/
+#section1 .section1_title{
+    width:100%;
+    padding:110px 0 20px 0;
+    background:#fff;
+}
+#section1 .section1_title h3{
+    font-family: NanumBarunGothic;
+    text-align: center;
+    font-size:36px;
+    width:1280px;
+    margin:10px auto;
+}
+.section1_title h3 span{
+    display: inline-block;
+    margin:0px 2px -5px;
+    width:7px;
+    height:35px;
+    transform:skew(-15deg);
+}
+.section1_title h3 span:first-child{background:#ff9b4a;margin-left:10px;}
+.section1_title h3 span:last-child{background: rgb(27, 61, 255);}
+
+.section1_title p{
+    width:1280px;
+    margin:0 auto;
+    text-align: center;
+}
+.section1_title p:first-of-type{
+    font-size:20px;
+    font-family: NanumBarunGothic;
+}
+.section1_title p:nth-of-type(2){
+    /* font-size:16px; */
+    margin:20px auto;
+    line-height:26px;
+}
+.section1_title>p>span{
+    font-family:NanumBarunGothicBold;
+    color:rgb(27, 61, 255);
+}
+
+#section1 ul.section1_contents{
+    width:1280px;
+    height:350px;
+    margin: 50px auto 100px;
+    text-align: center;
+    opacity:0;
+}
+.section1_contents li{
+    float:left;
+    width:350px;
+    height:350px;
+    margin-right:20px;
+    border-radius:5px;
+    position:relative;
+    cursor:pointer;
+}
+.section1_contents li:first-child{
+    margin-left:95px;
+    background: url(../image/4_service/section1_1.jpg) center no-repeat;
+    background-size:cover;
+}
+.section1_contents li:nth-child(2){
+    background: url(../image/4_service/section1_2.jpg) center no-repeat;
+    background-size:cover;
+}
+.section1_contents li:last-child{
+    background: url(../image/4_service/section1_3.jpg) center no-repeat;
+    background-size:cover;
+}
+
+.section1_contents>li>span{
+    position:absolute;
+    z-index:10;
+    transition:0.3s all;
+    background:#fff;
+}
+.section1_contents li span.left_top{
+    left:10px;
+    top:10px;
+    width:2px;
+    height:0;
+}
+.section1_contents li span.right_top{
+    right:10px;
+    top:10px;
+    width:0px;
+    height:2px;
+}
+.section1_contents li span.right_bottom{
+    right:10px;
+    bottom:10px;
+    width:2px;
+    height:0px;
+}
+.section1_contents li span.left_bottom{
+    left:10px;
+    bottom:10px;
+    width:0px;
+    height:2px;
+}
+
+
+.section1_contents>li>p{
+    /* position:absolute;
+    z-index: 10; */
+    font-family:INK;
+    font-size:42px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6),0 0 5px rgba(0,0,0,0.8);
+    line-height:350px;
+    color:#fff;
+}
+.section1_contents li div{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    border-radius:5px;
+    background:linear-gradient(transparent 20%,#ff9b4a 100%);
+    opacity:0;
+}
+.section1_contents li div p{
+    padding:20px;
+    color:#fff;
+    text-shadow:0 0 10px rgba(0,0,0,0.6);
+    line-height:26px;
+    font-size: 16px;
+    position:absolute;
+    bottom:10px;
+}
+.section1_contents li:hover div{
+    opacity:1;
+    transition:all 0.5s;
+}
+.section1_contents li:hover{
+    background-size:300%;
+    transition:all 0.3s;
+}
+
+.section1_contents li:hover span.left_top{height:330px;}
+.section1_contents li:hover span.right_top{width:330px;}
+.section1_contents li:hover span.right_bottom{height:330px;}
+.section1_contents li:hover span.left_bottom{width:330px;}
+
+#section2>div:first-child{
+    width:100%;
+    height:300px;
+    background: url(../image/4_service/section2_bg.jpg) center -200px no-repeat;
+    background-size:cover;
+}
+.section2_in{
+    width:1180px;
+    height:600px;
+    margin:50px auto 0;
+    overflow: hidden;
+}
+.section2_in ul.slide{
+    position:relative;
+    width:3890px;
+    
+}
+.section2_in ul.slide li{
+    float:left;
+    width:1180px;
+    height:500px;
+}
+.section2_text{float:left;}
+.section2_text p{padding:20px;}
+.section2_text p:first-child{
+    font-family:NanumBarunGothicBold;
+    font-size:42px;
+    width:400px;
+    height:150px;
+    line-height: 150px;
+    text-align:center;
+}
+.section2_text p:nth-child(2){
+    font-size:16px;
+    width:400px;
+    margin: 20px 0;
+    line-height:26px;
+    color:#666;
+}
+
+.section2_in ul.slide li .section2_img{
+    float:right;
+    width:650px;
+    height:inherit;
+}
+.section2_in ul li:first-child .section2_img{
+    background:url(../image/4_service/section2_1.jpg) center no-repeat;
+    background-size:cover;
+}
+.section2_in ul li:nth-child(2) .section2_img{
+    background:url(../image/4_service/section2_2.jpg) center no-repeat;
+    background-size:cover;
+}
+.section2_in ul li:nth-child(3) .section2_img{
+    background:url(../image/4_service/section2_3.jpg) center no-repeat;
+    background-size:cover;
+}
+
+.section2_in .slide_btn{
+    width:200px;
+}
+.section2_in .slide_btn li{
+    margin:5px;
+    float:left;
+    height:7px;
+    width:50px;
+    border-radius:20px;
+    background:#ccc;
+    cursor:pointer;
+}
+.slide_btn li.active{background:rgb(27, 61, 255)}

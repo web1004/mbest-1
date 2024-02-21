@@ -1,0 +1,291 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: INK;
+    src: url(../font/INKLIPQUID.woff);
+}
+@font-face {
+    font-family:NanumBarunGothic;
+    src: url(../font/NanumBarunGothic.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicBold;
+    src: url(../font/NanumBarunGothicBold.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicLight;
+    src: url(../font/NanumBarunGothicLight.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicUltraLight;
+    src: url(../font/NanumBarunGothicUltraLight.woff);
+}
+
+body{
+    color:#333;
+    font-family: NanumBarunGothicLight;
+    font-size:18px;
+}
+/*스크롤바 위치확인*/
+/* #txt1{position:fixed;top:10px;right:10px;z-index: 999;} */
+
+
+
+/*___비주얼___*/
+section #visual{
+    width:100%;
+    min-width:1280px;
+    height:500px;
+    background:url(../image/3_people/visual.jpg) center center no-repeat;
+    background-size:cover;
+}
+section #visual div{
+    width:1280px;
+    margin:0 auto;
+}
+#visual div h2{
+    height:300px;
+    font-family:NanumBarunGothicBold;
+    font-size:42px;
+    font-weight:100;
+    color:#fff;
+    padding:130px 100px 0;
+    line-height: 60px;
+
+}
+#visual div p{
+    padding:20px;
+    width:120px;
+    height:10px;
+    font-size:16px;
+    font-weight: 900;
+    line-height: 16px;
+    border-radius: 30px;
+    margin:0 auto;
+    text-align: center;
+    cursor:pointer;
+    background:#333;
+    color:#fff;
+}
+#visual div p:hover{
+    background: rgb(27, 61, 255);
+    color:#fff;
+    border:none;
+    transition: all 0.2s;
+}
+
+/*___섹션___*/
+section #section1{
+    width:1280px;
+    height:1000px;
+    margin:0 auto;
+}
+/*섹션 제목*/
+#section1 .section1_title{
+    width:100%;
+    padding:110px 0 20px 0;
+    background:#fff;
+}
+#section1 .section1_title h3{
+    font-family: NanumBarunGothic;
+    text-align: center;
+    font-size:36px;
+    width:1280px;
+    margin:10px auto;
+}
+.section1_title h3 span{
+    display: inline-block;
+    margin:0px 2px -5px;
+    width:7px;
+    height:35px;
+    transform:skew(-15deg);
+}
+.section1_title h3 span:first-child{background:#ff9b4a;margin-left:10px;}
+.section1_title h3 span:last-child{background: rgb(27, 61, 255);}
+
+.section1_title p{
+    width:1280px;
+    margin:0 auto;
+    text-align: center;
+}
+.section1_title p:first-of-type{
+    font-size:20px;
+    font-family: NanumBarunGothic;
+}
+.section1_title p:nth-of-type(2){
+    /* font-size:16px; */
+    margin:20px auto 0;
+    line-height:26px;
+}
+
+#section1 .section1_slide{
+    width:1080px;
+    height:600px;
+    margin:0 auto;
+    overflow: hidden;
+    opacity:0;
+}
+
+.section1_slide ul.section1_contents{
+    text-align: center;
+    margin-top:300px;
+    width:5000px;
+}
+.section1_contents{position:relative;}
+.section1_contents li{
+    float:left;
+}
+.section1_contents li div{
+    /* background:#eee; */
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    margin:20px;
+}
+.section1_contents li div.active{
+    margin-top:-300px;
+    width:350px;
+    height:350px;
+    background:#fff;
+}
+.active_left{
+    transform:rotate(-75deg)
+}
+.active_right{
+    transform:rotate(75deg)
+}
+
+.section1_contents li div img{margin-bottom:10px;}
+.section1_contents li div span{
+    border-right:1px solid #666;
+    padding:0 10px;
+    display:none;
+}
+.section1_contents li div span:first-of-type{font-family:NanumBarunGothic;}
+.section1_contents li div span:last-child{
+    border:none;
+}
+
+.section1_slide .circle{
+    width:520px;
+    height:520px;
+    border: 2px solid #333;
+    border-radius:50%;
+    margin:0 auto;
+    position:relative;
+}
+
+.section1_slide .circle .slide_btn{
+    text-align: center;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:150px;
+}
+.slide_btn>div{
+    display:inline-block;
+    background:rgb(27, 61, 255);
+    border-radius: 20px;
+    width:50px;
+    height:40px;
+    position:relative;
+}
+.slide_btn>div>span{
+    position:absolute;
+    top:0;
+    left:6px;
+    color:#fff;
+}
+.slide_btn span{
+    font-size:40px;
+    cursor:pointer;
+}
+.btn_prev:hover,.btn_next:hover{
+    transform:scale(1.2);
+    transition: all 0.2s;
+    color:rgb(27, 61, 255);
+}
+
+#section2{
+    width:1280px;
+    height:350px;
+    margin: 0 auto;
+    opacity:0;
+}
+#section2 .section2_title{
+    float:left;
+    width:280px;
+    height:300px;
+    margin: 0 20px;
+    text-align:center;
+}
+.section2_title p:first-child{
+    font-family: INK;
+    font-size:100px;
+    margin: 50px 0 20px;
+}
+.section2_title p:last-child{
+    line-height:26px;
+    font-size:16px;
+    color:#999;
+}
+
+#section2 .section2_contents{
+    float:left;
+}
+.section2_contents>li{float:left;}
+.section2_contents>li>ul{margin-top:100px;}
+.section2_contents>li>ul>li{
+    width:210px;
+    margin: 0 5px;
+}
+.section2_contents>li>ul>li:first-child{
+    font-size:16px;
+    line-height:26px;
+    overflow: hidden;
+    position:relative;
+    height:0px;
+    opacity:0;
+}
+.section2_contents>li>ul>li>p{
+    background-color: rgb(27, 61, 255);
+    border-radius:5px;
+    height:100px;
+    padding:10px;
+    color:#fff;
+}
+.section2_contents>li>ul>li>span{
+    position:absolute;
+    bottom:10px;
+    left:100px;
+    display:block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid rgb(27, 61, 255);
+}
+.section2_contents>li>ul>li:last-child{
+    text-align: center;
+    line-height: 100px;
+    font-size:34px;
+    font-family:INK;
+    color:#666;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.section2_contents>li>ul:hover li{
+    transform:translateY(-160px);
+}
+.section2_contents>li>ul:hover li:first-child{
+    opacity:1;
+    height:150px;
+    transition: 0.3s all;
+}
+.section2_contents>li>ul:hover li:last-child{
+    color:#ff9b4a;
+    transition: 0.2s all;
+}
+

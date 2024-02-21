@@ -1,0 +1,392 @@
+﻿@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family:'NanumBarunGothic';
+    src: url("../font/NanumBarunGothic.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicBold';
+    src: url("../font/NanumBarunGothicBold.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicLight';
+    src: url("../font/NanumBarunGothicLight.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicExtraLight';
+    src: url("../font/NanumBarunGothicUltraLight.woff") format('woff'); 
+}
+
+
+#wrap{
+	background:#F2F2F2;
+	color:#333;
+	font-family: 'NanumBarunGothic';
+	font-weight:300;
+	font-size:16px;
+	min-width:1280px;
+}
+div#btn_link{
+	position:absolute;
+	z-index:10000;
+	bottom:20px;
+	right:20px;
+	cursor:pointer;
+	line-height:40px;
+	font-size:14px;
+	text-align: center;
+}
+div#btn_link>div:first-child{
+	position: relative;
+	z-index:10000;
+	border-radius:10px;
+	width:120px;
+	height:40px;
+	background:#333;
+	color:#F2F2F2;
+	opacity:0;
+	transform:translateY(0px);
+	margin-left:15px;
+}
+div#btn_link:hover>div:first-child{
+	opacity:1;
+	transform:translateY(-20px);
+	transition:all 0.6s;
+}
+div#btn_link>div:first-child>div{
+	position:absolute;
+	z-index:10000;
+	right:50px;
+	width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-top: 10px solid #333;
+}
+div#btn_link>img{
+	width:150px;
+	cursor:pointer;
+	border-radius: 10px;
+	filter:grayscale(0.8);
+}div#btn_link:hover>img{filter:grayscale(0);transition:all 0.6s;}
+div.pop{
+	display:none; 
+	position:fixed;
+	height:100%;
+	width:100%;
+	z-index: 99999;
+	background:rgba(0,0,0,0.75);
+
+}
+div.pop ul{
+	width:1280px;
+	margin:0 auto;
+}
+div.pop ul li:first-child span{
+	position:fixed;
+	z-index: 99999;
+	top:20px;
+	right:20px;
+	font-size:60px;
+	color:#fff;
+	cursor: pointer;
+}
+div.pop ul li:nth-child(2),div.pop ul li:nth-child(3){
+	float:left;
+	width:500px;
+	height:600px;
+	background:red;
+	margin-top:10vh;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+div.pop ul li:nth-child(2){
+	margin-left:130px;
+	background:url(../image/3.design/graphic_4/graphic_4_scroll_1.jpeg) no-repeat center;
+	background-size:cover;
+}
+div.pop ul li:nth-child(3){
+	margin-left:20px;
+	background:url(../image/3.design/graphic_4/graphic_4_scroll_2.jpeg) no-repeat center;
+	background-size:cover;
+}
+
+
+#navi.slideUp {
+	transform: translateY(-100%);
+	transition:all 0.3s;
+}
+
+#navi {
+	background:#f2f2f26b;
+	position:fixed;	
+	width:100vw;
+	min-width:1280px;
+	z-index:10000;
+}
+#navi h1 {
+	float:left;
+	margin:15px 50px 0;
+	width:40px;
+	height:40px;
+	background:url(../image/3.design/logo_black.png) no-repeat center center;
+	background-size:contain;
+}
+.main-nav {
+	position:relative;
+	float:left;
+	height:60px;
+	margin:10px 0 0 50px;
+}
+.main-nav li {
+	list-style:none;	
+	display:inline-block;
+	margin:12px 30px;
+}
+.main-nav a {
+	font-family:Arial;
+	font-size:20px;
+	text-decoration: none;
+}
+.container {
+	min-height:730px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	margin:0;
+}
+.bg-holder{
+  width:100%;
+  height:100%;
+}
+
+.section_in{
+	position:relative;
+	width:1280px;
+	/* height:100%; */
+	margin:0 auto;
+}
+
+section#visual{background-image:url("../image/3.design/graphic_4/graphic_4_title.jpg");min-width:1280px;}
+section#visual .section_in{height:100%;}
+section#visual .section_in h3{
+	/* color:#fff; */
+	text-shadow:5px 5px 10px rgba(0,0,0,0.1);
+	position:absolute;
+	left:40px;
+	bottom:320px;
+	font-size:36px;
+	/* color:#020659; */
+	font-family: 'NanumBarunGothicBold';
+}
+section#visual .section_in h3>img{
+	display: block;
+	height:25px;
+	margin-bottom:10px;
+}
+section#visual .section_in h3>span{
+	font-size:20px;
+	margin-left: 20px;
+	font-weight:100;
+	font-family: 'NanumBarunGothicLight';
+}
+section#concept{
+	background:#F2F2F2;
+	margin-top:-300px;
+	height:1250px;
+	/* box-shadow: 0px -20px 50px rgba(0,0,0,0.2),0px -5px 20px rgba(0,0,0,0.1); */
+}
+section#concept .overview_text{margin:0 60px;padding-top:100px;}
+section#concept h4{
+	color:#999;
+	float:left;
+	font-size:28px;
+	font-family: 'Righteous', cursive;
+	width:160px;
+}
+section#concept .overview_text>div{
+	float:left;
+	width:1000px;
+	margin-top:5px;
+	line-height:36px;
+	font-size:18px;
+}
+section#concept .overview_text div>span{
+	/* font-weight:500; */
+	font-family: 'NanumBarunGothicBold';
+	color:#000;
+}
+/* section#concept .overview_text div>a{
+	display:inline-block;
+	font-size:12px;
+	width:80px;
+	height:30px;
+	background-color: #333;
+	color:#F2F2F2;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 30px;
+} */
+section#concept .overview_text div ul {margin-top:10px;font-size:16px;}
+section#concept .overview_text div ul li{float:left;padding:0 10px;}
+section#concept .overview_text div>ul>li{margin-right:40px;}
+section#concept .overview_text div>ul>li>ul>li:first-child{color:#999;font-size:14px;}
+div.work_range{
+	display:inline-block;
+	width:300px;
+	height:30px;
+	border:1px solid #999;
+	border-radius:20px;
+	text-align: center;
+	color:#F2F2F2;
+	overflow: hidden;
+	line-height: 28px;
+	font-weight:500;
+}
+div.work_range div{
+	width:300px;
+	height:100%;
+	background-color: #999;
+	animation: range 1s ease-in-out;
+	overflow: hidden;
+}
+@keyframes range {
+	0%{width:0%;background-color:#666;}
+}
+img.tool{
+	width:30px;
+	height:30px;
+}
+
+section#concept .analysis{margin:100px 60px 0;}
+section#concept .analysis>ul{width:1000px;margin-left:160px;}
+section#concept .analysis>ul>li{
+	float:left;
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	text-align:center;
+	line-height: 30px;
+}
+section#concept .analysis>ul>li:first-child{
+	margin-left:80px;
+	background: url(../image/3.design/graphic_4/graphic_4_analysisl_1.jpg);
+	background-size:cover;
+}
+section#concept .analysis>ul>li:last-child{
+	margin-left:150px;
+	background: url(../image/3.design/graphic_4/graphic_4_analysisl_2.jpg);
+	background-size:cover;
+}
+section#concept .analysis>ul>li p {
+	border-radius: 20px;
+	background: rgba(255,255,255,0.8);
+	width:160px;
+	margin:220px 70px 0;
+
+}
+section#concept .analysis div.analysis_text{
+	width:1000px;
+	margin:20px 0 0 160px;
+	line-height:36px;
+	font-size:16px;
+	color:#666;
+	text-align:center;
+}
+section#concept .analysis div.analysis_text ul li{
+	float:left;
+	width:400px;
+	margin:0 25px;
+}
+section#concept .analysis div.analysis_text ul li .material-icons{
+	font-size:50px;
+	color:#ccc;
+	display:block;
+}
+section#concept .analysis div.analysis_text ul li .analysis_text_mark{
+	font-family: 'NanumBarunGothicBold';
+	color:#005ba6;
+	font-size:18px;
+}
+section#concept .analysis div.analysis_text ul li p{
+	font-size:12px; color:#999;
+}
+
+section#concept div.analysis_color{margin:100px 60px 0;}
+section#concept div.analysis_color ul{float:left;}
+section#concept div.analysis_color ul li{float:left;text-align: center;}
+section#concept div.analysis_color ul li:nth-child(1){
+	background:#4facd8;
+	color:#fff;
+	width:200px;
+	height:200px;border-radius: 50%;
+	line-height: 200px;
+	margin-left:60px;
+}
+section#concept div.analysis_color ul li:nth-child(2){
+	height:160px;
+	line-height: 200px;
+	font-family: 'NanumBarunGothicBold';
+	font-size:20px;
+	margin-left:-230px;
+}
+section#concept div.analysis_color ul:first-of-type li:nth-child(3){
+	background:#fff;
+	width:160px;
+	height:160px;
+	border-radius: 50%;
+	line-height: 160px;
+	margin:20px 0 0 100px;
+}
+section#concept div.analysis_color ul:first-of-type li:nth-child(4){
+	height:160px;
+	line-height: 160px;
+	margin:20px 0 0 -180px;
+	font-family: 'NanumBarunGothicBold';
+	font-size:20px;
+}
+section#concept div.analysis_color ul:first-of-type li:nth-child(5){
+	background:#d82b25;
+	color:#fff;
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+	line-height: 120px;
+	margin:40px 0 0 100px;
+}
+section#concept div.analysis_color ul:first-of-type li:nth-child(6){
+	height:120px;
+	line-height: 120px;
+	margin:40px 0 0 -160px;
+	font-family: 'NanumBarunGothicBold';
+	font-size:20px;
+}
+
+section#output{
+	background: url(../image/3.design/graphic_4/graphic_4_output_bg.jpg);
+}
+section#output h4{
+	color:#999;
+	padding:100px 60px 0;
+	font-size:28px;
+	font-family: 'Righteous', cursive;
+}
+section#output hr{
+	width:50px;
+	height:5px;
+	background:#999;
+	border:none;
+	margin:5px 60px;
+}
+section#output ul li{
+	float:left;
+	width:420px;
+	/* height:600px; */
+}
+section#output ul {
+	margin:10px auto;
+	width:1040px;
+}
+section#output ul li{margin:10px;}
+

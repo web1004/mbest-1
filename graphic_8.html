@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/graphic_8.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+
+        <nav id="navi">
+          <h1 class="indent">logo</h1>
+          <ul class="main-nav">			
+            <li><a href="#concept" class="scroll">Concept</a></li>
+            <li><a href="#process" class="scroll">Work Process</a></li>
+            <li><a href="#output" class="scroll">Output</a></li>
+          </ul>
+        </nav>
+
+        <section id="visual" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h3>
+                    <span>Redesign</span>
+                    LG전자 포토 리뷰 프로모션 배너 
+                    <span>2D Grapic Design</span>
+                </h3>
+            </div>
+        </section>
+        <section id="concept">
+            <div class="section_in">
+                <div class="overview_text clear">
+                    <h4>Overview</h4>
+                    <div>
+                        포토 리뷰 시 제공되는 100% 경품(음료 기프티콘)에 초점을 두어 더욱 많은 참여를 유도하도록 리뉴얼한 디자인입니다.
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>작업 기여도</li>
+                                    <li><div class="work_range"><div>개인작업 100%</div></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>작업 프로그램</li>
+                                    <li><img src="image/3.design/photoshop.png" alt="Ps" class="tool"><img src="image/3.design/illustrator.png" alt="Ai" class="tool"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="analysis clear">
+                    <h4>Analysis</h4>
+                    <fieldset>
+                        <legend>AS-IS</legend>
+                        <img src="image/3.design/graphic_8/graphic_8_asis.jpg" alt="LG전자 상품 리뷰쓰고 경품받고">
+                    </fieldset>
+                    <fieldset>
+                        <legend>TO-BE</legend>
+                        <ul>
+                            <li>
+                                <span class="analysis_circle"></span><span class="analysis_line"></span>프로모션 키워드만 강조한 카피 헤드라인으로 변경
+                                <br><span class="keyword">PHOTO REVIEW EVENT</span>
+                            </li>
+                            <li>
+                                <span class="analysis_circle"></span><span class="analysis_line"></span>배너 상단 확인 시 제공되는 경품에 대한 직관적인 이미지 전달
+                            </li>
+                            <li>
+                                <span class="analysis_circle"></span><span class="analysis_line"></span>배너 상단 내용에 집중되도록 그래픽 요소 축소
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="analysis_color">
+                    <h4>Color</h4>
+                    <ul class="clear">
+                        <li>#8F8F8F</li>
+                        <li>#F9F9F9</li>
+                        <li>#EEE4EF</li>
+                        <li>#FED201</li>
+                        <li>#17633D</li>
+                    </ul>
+                </div>
+                <div class="analysis_typo">
+                    <h4>Typo</h4>
+                    <ul class="clear">
+                        <li>에스코어드림 Bold</li>
+                        <li>Kopub 돋움</li>
+                        <li>나눔소미체</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="process" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div class="process_text">
+                    <h4>Work Process</h4>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <section id="output">
+            <div class="section_in">
+                <h4>Output</h4>
+                <hr>
+                <ul>
+                    <li><img src="image/3.design/graphic_8/graphic_8_output_1.jpg" alt="LG전자 PHOTO REVIEW EVENT"></li>
+                    <li><img src="image/3.design/graphic_8/graphic_8_output_2.jpg" alt="LG전자 PHOTO REVIEW EVENT_banner"></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- Parallax Script-->
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+	<script>
+		$(function() {
+      $('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+      
+      $(window).resize(function(){
+        $('.container').width($(window).width()).height($(window).height());
+        $('.content').each(function(){
+          $(this).css('margin-left',($(this).width()/2 * -1) + 'px').css('margin-top',($(this).height()/2 * -1) + 'px');
+        });
+      });
+
+      setTimeout(function(){
+        $(window).resize()}, 1000);      
+
+      $('.bg-holder').parallaxScroll({
+        friction:0.3
+      });
+
+			$('.icon img').hover(function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_over.png'));				
+			}, function() {
+				$(this).attr('src', $(this).attr('src').replace('_over.png', '.png'));
+			});      
+		});
+	</script>
+
+</body>
+</html>

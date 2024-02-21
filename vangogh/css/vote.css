@@ -1,0 +1,31 @@
+@import url(common.css);
+@import url(swiper.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+.vote{
+    font-size:14px;
+    font-size: 0.875rem;
+    color:#fff;
+    font-family:'Noto Sans KR';
+    width:200px;
+    height:40px;
+    background:linear-gradient(145deg,#fff 5%,rgb(223, 167, 27) 30%,rgb(218,178,80));
+    box-shadow:0px 10px 10px rgba(0,0,0,0.6);
+    border-radius:50px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:500;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+}
+.vote>a>span{
+    font-size:16px;
+    font-size:1rem;
+    font-weight:500;
+}

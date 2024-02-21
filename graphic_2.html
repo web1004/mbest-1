@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/graphic_2.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+
+        <nav id="navi">
+          <h1 class="indent">logo</h1>
+          <ul class="main-nav">			
+            <li><a href="#concept" class="scroll">Concept</a></li>
+            <li><a href="#process" class="scroll">Work Process</a></li>
+            <li><a href="#output" class="scroll">Output</a></li>
+          </ul>
+        </nav>
+
+        <section id="visual" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h3>
+                    DRINK ME (3D Effect / 병과 잔)
+                    <span>2D Grapic Design</span>
+                </h3>
+            </div>
+        </section>
+        <section id="concept">
+            <div class="section_in">
+                <div class="overview_text clear">
+                    <h4>Overview</h4>
+                    <div>
+                        '병과 잔'이라는 자유 주제로 3D Effect를 사용하여 작업한 일러스트입니다.<br>
+                        디즈니 '이상한 나라의 앨리스'의 한 장면을 스토리텔링하고자 하였으며, 유리잔의 경우 시중에 판매되는 굿즈 제품을 참고하였습니다.
+
+                        <!-- <a href="https://www.lottecinema.co.kr/NLCHS/Cinema/SpecialCinema?divisionCode=2&screendivcd=300" target="_blank">바로가기</a> -->
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>작업 기여도</li>
+                                    <li><div class="work_range"><div>개인작업 100%</div></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>작업 프로그램</li>
+                                    <li><img src="image/3.design/illustrator.png" alt="Ps" class="tool"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="analysis clear">
+                    <h4>Analysis</h4>
+                    <ul class="clear">
+                        <li><p>병과 잔(3D)</p></li>
+                        <li><p>이상한 나라의 앨리스</p></li>
+                        <li><p>Reference</p></li>
+                    </ul>
+                    <div class="analysis_text clear">
+                        일러스트의 재미 제공을 위하여 '이상한 나라의 앨리스' 소재를 활용하였습니다. 
+                        앨리스가 병에 담긴 음료를 유리잔에 따라 마신 뒤 작아진 몸에 놀라는 장면을 스토리텔링하였으며 그림자를 통하여 상황을 유추할 수 있도록 일러스트를 구성하였습니다.
+                        또한 몽환스러운 동화 분위기를 연출하기 위해 메인색상으로 퍼플 계열을 선택하였습니다.
+                    </div>
+                </div>
+                <div class="analysis_color">
+                    <h4>Color</h4>
+                    <ul class="clear">
+                        <li>#8303A6</li>
+                        <li>MAIN</li>
+                        <li>#F2C438</li>
+                        <li>POINT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="process" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <div class="process_text">
+                    <h4>Work Process</h4>
+                    <hr>
+                    <div>
+                        물체의 단면을 선 요소로 파악하고 일러스트레이터 3D Effect로 회전하여 입체화하였습니다.<br>
+                        또한 유리의 질감을 표현하기 위하여 전체 매핑이 아닌 부푼 매핑을 하였으며, 투명도를 낮추고 광원에 따른 하이라이트를 극대화하였습니다. 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="output" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h4>Output</h4>
+                <hr>
+                <ul>
+                    <li><img src="image/3.design/graphic_2/graphic_2_output.jpg" alt="Alice Drink Me"></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- Parallax Script-->
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+	<script>
+		$(function() {
+      $('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+      
+      $(window).resize(function(){
+        $('.container').width($(window).width()).height($(window).height());
+        $('.content').each(function(){
+          $(this).css('margin-left',($(this).width()/2 * -1) + 'px').css('margin-top',($(this).height()/2 * -1) + 'px');
+        });
+      });
+
+      setTimeout(function(){
+        $(window).resize()}, 1000);      
+
+      $('.bg-holder').parallaxScroll({
+        friction:0.3
+      });
+
+			$('.icon img').hover(function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_over.png'));				
+			}, function() {
+				$(this).attr('src', $(this).attr('src').replace('_over.png', '.png'));
+			});      
+		});
+	</script>
+
+</body>
+</html>

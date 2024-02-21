@@ -1,0 +1,365 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: INK;
+    src: url(../font/INKLIPQUID.woff);
+}
+@font-face {
+    font-family:NanumBarunGothic;
+    src: url(../font/NanumBarunGothic.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicBold;
+    src: url(../font/NanumBarunGothicBold.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicLight;
+    src: url(../font/NanumBarunGothicLight.woff);
+}
+@font-face {
+    font-family:NanumBarunGothicUltraLight;
+    src: url(../font/NanumBarunGothicUltraLight.woff);
+}
+
+body{
+    color:#333;
+    font-family: NanumBarunGothicLight;
+    font-size:18px;
+}
+/*스크롤바 위치확인*/
+/* #txt1{position:fixed;top:10px;right:10px;z-index: 999;}  */
+
+/*___비주얼___*/
+section #visual{
+    width:100%;
+    min-width:1280px;
+    height:500px;
+    background:url(../image/6_tour/visual.jpg) top center no-repeat;
+    background-size:cover;
+}
+section #visual div{
+    width:1280px;
+    margin:0 auto;
+}
+#visual div h2{
+    height:300px;
+    line-height: 500px;
+    font-family:NanumBarunGothicBold;
+    letter-spacing: 10px;
+    font-size:40px;
+    font-weight:100;
+    text-align: center;
+    color:#fff;
+}
+#visual div p{
+    padding:20px;
+    width:120px;
+    height:10px;
+    font-size:16px;
+    font-weight: 900;
+    line-height: 16px;
+    border:1px solid #333;
+    border-radius: 30px;
+    margin:0 auto;
+    text-align: center;
+    cursor:pointer;
+}
+#visual div p:hover{
+    background: rgb(27, 61, 255);
+    color:#fff;
+    border:none;
+    transition: all 0.2s;
+}
+
+/*___섹션___*/
+section #section1{
+    width:100%;
+    margin:0 auto;
+}
+/*섹션 제목*/
+#section1 .section1_title{
+    width:100%;
+    padding:110px 0 10px 0;
+    margin-bottom:20px;
+    background:#fff;
+}
+#section1 .section1_title h3{
+    font-family: NanumBarunGothic;
+    text-align: center;
+    font-size:36px;
+    width:1280px;
+    margin:10px auto;
+}
+.section1_title h3 span{
+    display: inline-block;
+    margin:0px 2px -5px;
+    width:7px;
+    height:35px;
+    transform:skew(-15deg);
+}
+.section1_title h3 span:first-child{background:#ff9b4a;margin-left:10px;}
+.section1_title h3 span:last-child{background: rgb(27, 61, 255);}
+
+.section1_title p{
+    font-size:20px;
+    text-align: center;
+    width:1280px;
+    margin:0 auto;
+    line-height: 32px;
+}
+
+#section1 .search_bar{
+    width:600px;
+    height:50px;
+    margin:0px auto 100px;
+    border-radius:30px;
+    border:1px solid #666;
+}
+.search_bar input{
+    width:450px;
+    height:20px;
+    padding:10px 20px;
+    margin-left:50px;
+    margin-top:-30px;
+    font-size:20px;
+    border:none;
+    outline: none;
+}
+.search_bar input::placeholder{
+    font-size:20px;
+    text-align: center;
+}
+.search_bar button{
+    background:transparent;
+    border:none;
+    outline: none;
+}
+.search_bar button span{
+    font-size:45px;
+    color:#999;
+    cursor:pointer;
+}
+.search_bar button:hover span{
+    color:rgb(27, 61, 255);
+}
+
+
+
+#section2{
+    width:1280px;
+    height: 1700px;
+    margin:0 auto;
+}
+#section2 ul.tour_list{margin:20px 85px;}
+#section2 ul.tour_list>li{
+    float:left;
+    border-radius: 5px;
+    width:350px;
+    height:350px;
+    background:#666;
+    margin:10px;
+    overflow: hidden;
+}
+.tour_list li ul.tour_content{
+    width:700px;
+    height:350px;
+}
+
+.tour_list li:nth-child(1) ul.tour_content{background:url(../image/6_tour/list_1.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(2) ul.tour_content{background:url(../image/6_tour/list_2.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(3) ul.tour_content{background:url(../image/6_tour/list_3.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(4) ul.tour_content{background:url(../image/6_tour/list_4.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(5) ul.tour_content{background:url(../image/6_tour/list_5.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(6) ul.tour_content{background:url(../image/6_tour/list_6.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(7) ul.tour_content{background:url(../image/6_tour/list_7.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(8) ul.tour_content{background:url(../image/6_tour/list_8.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(9) ul.tour_content{background:url(../image/6_tour/list_9.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(10) ul.tour_content{background:url(../image/6_tour/list_10.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(11) ul.tour_content{background:url(../image/6_tour/list_11.jpg) no-repeat center;background-size:cover;}
+.tour_list li:nth-child(12) ul.tour_content{background:url(../image/6_tour/list_12.jpg) no-repeat center;background-size:cover;}
+
+.tour_list li ul.tour_content li{
+    float:left;
+    width:350px;
+    height:350px;
+}
+.tour_list ul.tour_content li:first-child{
+    /* background: red; */
+    position:relative;
+}
+.tour_list ul.tour_content li:last-child{
+    /* background: #ff9b4a; */
+    position:relative;
+}
+
+ul.tour_content li:first-child p{
+    position:absolute;
+    bottom:0;
+    padding: 20px;
+    font-family:INK;
+    color:rgba(255,255,255,0.9);
+    text-shadow:0 0 10px #000;
+    font-size:26px;
+}
+ul.tour_content li:first-child p span{
+    font-family:NanumBarunGothicBold;
+    color:rgba(255,255,255,0.9);
+    text-shadow:0 0 10px #000;
+    font-size:34px;
+}
+
+ul.tour_content li:last-child p{
+    width:220px;
+    height:0px;
+    margin:20px;
+    padding:10px;
+    font-size:16px;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    line-height: 26px;
+    font-family:NanumBarunGothic;
+    color:#666;
+    overflow:hidden;
+}
+ul.tour_content .material-icons{
+    font-size:40px;
+    position: absolute;
+    top:20px;
+    right:30px;
+    background-color:rgba(255,255,255,0.8);
+    
+    border-radius:50%;
+    padding:2px;
+}
+ul.tour_content li:last-child .more_btn{
+    width:220px;
+    height:20px;
+    margin:20px;
+    padding:10px;
+    background:#ff9b4a;
+    color:#fff;
+    font-family:NanumBarunGothicBold;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align:center;
+    cursor:pointer;
+}
+ul.tour_content li:last-child .more_btn:hover{
+    background:rgb(27, 61, 255);
+    transition:all 0.3s;
+}
+
+#section2 .top_btn{
+    width:80px;
+    height:80px;
+    clear:both;
+    text-align: center;
+    border-radius:50%;
+    margin:0 auto;
+    color:#999;
+    font-size:24px;
+    box-shadow: -5px -5px 10px #eee, 5px 5px 10px #ccc;
+    cursor:pointer;
+}
+#section2 .top_btn span:first-child{
+    display: block;
+    font-size:36px;
+    padding-top:2px;
+}
+#section2 .top_btn span:last-child{font-family: NanumBarunGothicBold;}
+#section2 .top_btn:hover{
+    background:rgb(27, 61, 255);
+    color:#fff;
+    transition:all 1s;
+}
+
+
+
+/* POPUP BOX ---------------------*/
+
+.popup{ 
+	display:none; 
+	position:fixed; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100%; 
+	background:rgba(0,0,0,0.9); 
+	z-index:1000;
+	overflow-y:scroll; 
+}
+
+
+.pop_body{  
+	position:relative;
+	height:100%;	
+	margin:0 auto;
+	width:500px;
+	background:#fff;
+	z-index:10000;
+}
+.pop>li{
+	width:500px;
+	position:absolute;
+	text-align:center;
+	background:#fff;
+	display:none;
+}
+.pop>li p{
+	text-align:center;
+	font-size:30px;
+}
+
+/*버튼영역*/ 
+.m_btn>li{
+    color:#fff;
+	cursor:pointer;
+	overflow:hidden;
+}
+.m_btn>li:hover{color:#ff9b4a;}
+
+ /*닫기버튼*/
+.m_btn .btn_close{
+    position:fixed;
+    top:0px;
+    right:20px;
+	height:100px;
+	width:100px;
+    text-align: center;
+}
+.m_btn .btn_close i{
+    font-size:60px;
+    line-height:100px;
+}
+
+
+.m_btn .left_btn{
+    position:fixed;
+    top:45%;
+    left:20%;
+}
+.m_btn .right_btn{
+    position:fixed;
+    top:45%;
+    right:20%;
+}
+.left_btn i,.right_btn i{
+    font-size:100px;
+}
+
+
+.m_btn .g_page{  /*Page번호*/
+    position:fixed;
+    bottom:30px;
+    right:50px;
+	font-size:36px;
+	color:rgba(255,255,255,0.6);
+	text-align:center;
+}
+.g_page span:first-child{
+    font-size:60px;
+    color:#fff;
+    font-family: NanumBarunGothicBold;
+}

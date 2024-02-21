@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=1280px, initial-scale=1.0, target-densitydpi=medium-dpi" name="viewport">
+<title>YOUJOON CHOI - PORTFOLIO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/graphic_4.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrap">
+        
+        <div id="btn_link">
+            <div >게첩 사진보기<div></div></div>
+            <img src="image/3.design/graphic_4/graphic_4_scroll_1.JPG" alt="browser">
+        </div>
+        <div class="pop">
+            <ul>
+                <li><span class="material-icons close">clear</span></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <nav id="navi">
+          <h1 class="indent">logo</h1>
+          <ul class="main-nav">			
+            <li><a href="#concept" class="scroll">Concept</a></li>
+            <li><a href="#output" class="scroll">Output</a></li>
+          </ul>
+        </nav>
+
+        <section id="visual" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h3>
+                    <img src="image/3.design/graphic_1/lottecinema_logo.png" alt="LOTTE CINMEA">
+                    V.O.C 직원 칭찬글 독려 포스터
+                    <span>2D Grapic Design</span>
+                </h3>
+            </div>
+        </section>
+        <section id="concept">
+            <div class="section_in">
+                <div class="overview_text clear">
+                    <h4>Overview</h4>
+                    <div>
+                        가운데 온라인 V.O.C 채널로 바로 접속가능한 QR코드를 삽입하여,
+                         롯데시네마 이용 고객에게 즉각적인 온라인 직원 칭찬 글을 독려하는 포스터 시안입니다.
+                        실제 롯데시네마의 유니폼을 본떠 일러스트 작업을 하였습니다.
+                        <span>현재 롯데시네마 동탄 지점 홀에서 실제 게첩 중입니다.</span>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>작업 기여도</li>
+                                    <li><div class="work_range"><div>개인작업 100%</div></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>작업 프로그램</li>
+                                    <li><img src="image/3.design/illustrator.png" alt="Ai" class="tool"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>클라이언트</li>
+                                    <li>롯데시네마 동탄</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="analysis clear">
+                    <h4>Analysis</h4>
+                    <ul class="clear">
+                        <li><p>롯데시네마 슬로건</p></li>
+                        <li><p>롯데시네마 유니폼</p></li>
+                    </ul>
+                    <div class="analysis_text clear">
+                        <ul>
+                            <li>롯데시네마 슬로건을 반영한 카피라이트 선정<br>'Happy Memories 고객에게 행복한 기억을 선사합니다.'
+                                <span class="material-icons">south</span>
+                                <span class="analysis_text_mark">'행복한 기억을 남겨준 직원을 칭찬해주세요.'</span>
+                            </li>
+                            <li>롯데시네마 직원의 상징적 이미지 표현
+                                <span class="material-icons">south</span>
+                                <span class="analysis_text_mark">롯데시네마 아르바이트 유니폼</span>
+                                <span class="material-icons">south</span>
+                                <span class="analysis_text_mark">색상 추출 및 일러스트</span>
+                                <p>홈페이지 모델 사진 사용범위 및 기간에 대한 저작권 침해 우려 일러스트로 대체</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="analysis_color">
+                    <h4>Color</h4>
+                    <ul class="clear">
+                        <li>#4facd8</li>
+                        <li>MAIN</li>
+                        <li>#ffffff</li>
+                        <li>SUB</li>
+                        <li>#d82b25</li>
+                        <li>POINT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="output" class="container bg-holder" data-width="1200" data-height="600">
+            <div class="section_in">
+                <h4>Output</h4>
+                <hr>
+                <ul>
+                    <li><img src="image/3.design/graphic_4/graphic_4_output.jpg" alt="행복한 기억을 남겨준 직원을 칭찬해주세요"></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- Parallax Script-->
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+	<script>
+		$(function() {
+      $('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+      
+      $(window).resize(function(){
+        $('.container').width($(window).width()).height($(window).height());
+        $('.content').each(function(){
+          $(this).css('margin-left',($(this).width()/2 * -1) + 'px').css('margin-top',($(this).height()/2 * -1) + 'px');
+        });
+      });
+
+      setTimeout(function(){
+        $(window).resize()}, 1000);      
+
+      $('.bg-holder').parallaxScroll({
+        friction:0.3
+      });
+
+			$('.icon img').hover(function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_over.png'));				
+			}, function() {
+				$(this).attr('src', $(this).attr('src').replace('_over.png', '.png'));
+			});      
+		});
+	</script>
+
+</body>
+</html>

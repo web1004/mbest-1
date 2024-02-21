@@ -1,0 +1,330 @@
+﻿@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family:'NanumBarunGothic';
+    src: url("../font/NanumBarunGothic.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicBold';
+    src: url("../font/NanumBarunGothicBold.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicLight';
+    src: url("../font/NanumBarunGothicLight.woff") format('woff'); 
+}
+@font-face {
+    font-family:'NanumBarunGothicExtraLight';
+    src: url("../font/NanumBarunGothicUltraLight.woff") format('woff'); 
+}
+
+/*Typo*/
+@font-face {
+    font-family:'KoPub-Dotum-Bold';
+    src: url("../font/KoPub-Dotum-Bold.woff") format('woff'); 
+}
+@font-face {
+    font-family:'KoPub-Dotum-Medium';
+    src: url("../font/KoPub-Dotum-Medium.woff") format('woff'); 
+}
+@font-face {
+    font-family:'KoPub-Dotum-Light';
+    src: url("../font/KoPub-Dotum-Light.woff") format('woff'); 
+}
+
+
+html{background:#fff5dd;}
+#wrap{
+	background:#F2F2F2;
+	color:#333;
+	font-family: 'NanumBarunGothic';
+	font-weight:300;
+	font-size:16px;
+}
+
+/*____________________________________원페이지 탑메뉴*/
+#navi.slideUp {
+	transform: translateY(-100%);
+	transition:all 0.3s;
+}
+
+#navi {
+	background:#f2f2f26b;
+	position:fixed;	
+	width:100vw;
+	z-index:10000;
+}
+#navi h1 {
+	float:left;
+	margin:15px 50px 0;
+	width:40px;
+	height:40px;
+	background:url(../image/3.design/logo_black.png) no-repeat center center;
+	background-size:contain;
+}
+.main-nav {
+	position:relative;
+	float:left;
+	height:60px;
+	margin:10px 0 0 50px;
+}
+.main-nav li {
+	list-style:none;	
+	display:inline-block;
+	margin:12px 30px;
+}
+.main-nav a {
+	font-family:Arial;
+	font-size:20px;
+	text-decoration: none;
+}
+
+/*____________________________________공통적용 사항*/
+.container {
+	min-height:730px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	margin:0;
+}
+.bg-holder{
+  width:100%;
+  height:100%;
+}
+
+.section_in{
+	position:relative;
+	width:1280px;
+	height:800px;
+	padding:calc((100vh - 800px)/2) 0;
+	margin:0 auto;
+	/* border:1px solid yellow; */
+}
+h4{
+	font-size:28px;
+	font-family: 'Righteous', cursive;
+}
+hr{
+	width:50px;
+	height:5px;
+	border:none;
+}
+
+/*____________________________________비주얼*/
+section#visual{
+	background:url(../image/3.design/ui_9/ui_9_title.jpg) center center no-repeat;
+	background-size:cover;
+}
+
+/*개요*/
+#visual .visual_in_left{
+	padding:250px 20px 50px 40px;
+	width:500px;
+	height:530px;
+}
+#visual .visual_in_left img.logo{
+	height:20px;
+}
+#visual .visual_in_left h3{
+	font-size:36px;
+	font-family: 'NanumBarunGothicBold';
+	margin:10px 0 50px;
+}
+#visual .visual_in_left h3 span{
+	font-size:20px;
+	font-weight:100;
+	margin-left: 20px;
+	font-family: 'NanumBarunGothicLight';
+}
+/* #visual .visual_in_left .overview_text{margin-left:20px;} */
+#visual .visual_in_left .overview_text h4{color:#333;}
+#visual .visual_in_left .overview_text hr{
+	background:#333;
+	margin:10px 10px 20px;
+}
+#visual .visual_in_left .overview_text>div{
+	line-height:36px;
+	font-size:18px;
+}
+#visual .visual_in_left .overview_text>ul{
+	margin-top:20px;
+	font-size:16px;
+	line-height:30px;
+}
+#visual .visual_in_left .overview_text>ul>li{
+	float:left;
+	margin-right:20px;
+}
+#visual .visual_in_left .overview_text>ul>li>ul>li{
+	float:left;
+	margin-right:10px;
+}
+#visual .visual_in_left .overview_text>ul>li>ul>li>div.work_range{
+	width:180px;
+	height:25px;
+	border:1px solid #fff;
+	border-radius: 30px;
+}
+.work_range div{
+	width:176px;
+	height:21px;
+	background:#fff;
+	color:#333;
+	line-height:21px;
+	text-align: center;
+	border-radius: 30px;
+	margin:2px 2px;
+	animation: work_range 1s 1s;
+	overflow: hidden;
+}
+@keyframes work_range {
+	0%{width:0;opacity:0;}
+}
+#visual .visual_in_left .overview_text>ul>li>ul>li>img.tool{
+	width:30px;
+	height:30px;
+	margin-right:5px;
+}
+#visual div .device_computer{
+	background:url(../image/3.design/ui_9/ui_9_title_1.png) no-repeat center center;
+	background-size:cover;
+	width:600px;
+	height:518px;
+	position:absolute;
+	bottom:20px;
+	right:160px;
+	animation: computer 1s;
+}
+@keyframes computer {
+	0%{right:-100px;opacity: 0;}
+}
+
+/*____________________________________컨셉*/
+section#concept{
+	background:#fff5dd;
+}
+section#concept h4{padding:70px 0 0 40px;color:#666;}
+section#concept hr{
+	background:#666;
+	margin:10px 50px;
+}
+
+/* anaysis / DesignConcept / Keywords */
+section#concept dl.concept_in_left{
+	float:left;
+	width:400px;
+	/* border:1px solid greenyellow; */
+	margin:120px 0 0 40px;
+}
+section#concept dl.concept_in_left dt{
+	font-size:20px;
+	font-family: 'Righteous', cursive;
+	margin-bottom:10px;
+	color:#666;
+}
+section#concept dl.concept_in_left dd{
+	line-height:30px;
+	font-family: 'NanumBarunGothicLight';
+	margin-bottom:30px;
+}
+dl.concept_in_left dd ul li{
+	float:left;
+	border:1px solid #666;
+	padding:2px 15px;
+	border-radius: 20px;
+	margin-right:5px;
+}
+
+/* MoodBoard / Tyop / Color*/
+section#concept dl.concept_in_right{
+	float:left;
+	width:760px;
+	height:700px;
+	margin:-10px 0 0 60px;
+}
+section#concept dl.concept_in_right dt{
+	width:180px;
+	height:40px;
+	float:left;
+	font-size:26px;
+	font-family: 'Righteous', cursive;
+	margin-right:40px;
+	text-align: right;
+	color:#666;
+}
+section#concept dl.concept_in_right dd{float:left;}
+section#concept dl.concept_in_right dd{
+	width:520px;
+	margin-bottom:30px;
+}
+section#concept dl.concept_in_right dd:nth-of-type(1){
+	height:300px;
+	background:url(../image/3.design/ui_9/ui_9_concept_mood.jpg) center center;
+	background-size:cover;
+}
+section#concept dl.concept_in_right dd:nth-of-type(2){
+	height:100px;
+}
+dl.concept_in_right dd:nth-of-type(2) ul li{float:left;}
+dl.concept_in_right dd:nth-of-type(2) ul li.color_title{
+	line-height:100px;
+	font-family:'NanumGothicBold'
+}
+dl.concept_in_right dd:nth-of-type(2) ul li{
+	height:80px;
+	line-height:80px;
+	font-size:14px;
+	text-align: center;
+}
+dl.concept_in_right dd:nth-of-type(2) ul li:nth-child(1){background:#f16b52;width:calc(520px / 4);}
+dl.concept_in_right dd:nth-of-type(2) ul li:nth-child(2){background:#ffd983;width:calc(520px / 4);}
+dl.concept_in_right dd:nth-of-type(2) ul li:nth-child(3){background:#7eb8c4;width:calc(520px / 4);}
+dl.concept_in_right dd:nth-of-type(2) ul li:nth-child(4){background:#252947;width:calc(520px / 4);color:#fff;}
+
+dl.concept_in_right dd:nth-of-type(3)>ul>li{font-size:24px;float:left;}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:first-child{margin-right:20px;}
+dl.concept_in_right dd:nth-of-type(3)>ul>li>ul>li{margin-bottom:10px;}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:first-child>ul>li:nth-child(1){font-family:'SCDream6';}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:first-child>ul>li:nth-child(2){font-family:'SCDream4';}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:first-child>ul>li:nth-child(3){font-family:'SCDream4';}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:last-child>ul>li:nth-child(1){font-family:'KoPub-Dotum-Bold';}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:last-child>ul>li:nth-child(2){font-family:'KoPub-Dotum-Medium';}
+dl.concept_in_right dd:nth-of-type(3)>ul>li:last-child>ul>li:nth-child(3){font-family:'KoPub-Dotum-Light';}
+
+/*____________________________________아웃풋*/
+section#output{
+	background:#00697e;
+	font-size:12px;
+	height:950px;
+	color:#fff;
+}
+section#output h4{padding:70px 0 0 40px;}
+section#output hr{
+	margin:10px 50px 0;
+	background:#fff;
+}
+
+/*작업 해상도 안내*/
+section#output>.section_in>div{margin:20px  0 20px 50px;}
+
+
+section#output ul{float:left;}
+section#output ul.output_detail_left,
+section#output ul.output_detail_right{
+	width:190px;
+	line-height:20px;
+	font-family: 'NanumBarunGothicLight';
+}
+
+/*좌측 디테일 설명*/
+section#output ul.output_detail_left{margin:0 10px 0 40px;text-align:right;}
+/* section#output ul.output_detail_left li{border:1px solid greenyellow;} */
+section#output ul.output_detail_left li.output_subtitle{
+	font-size: 18px;
+	font-family: 'NanumGothicBold';
+}
+section#output ul.output_detail_left li:nth-child(2){margin-top:670px;}
+
+/*아웃풋 결과물 이미지*/
+section#output ul.output_img{width:800px;}
+section#output ul.output_img li:first-child{margin-bottom:50px;}

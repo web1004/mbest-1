@@ -1,0 +1,197 @@
+@import url(common.css);
+@import url(swiper.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+#pc{display:none;}
+#wrap{
+    min-width:320px;
+    width:100%;
+    max-width:480px;
+    height:100vh;
+    font-size:16px;
+    font-size: 1rem;
+    background:#222;
+    color:#fff;
+    font-family:'Noto Sans KR';
+}
+section span.line{
+    display:inline-block;
+    height:1px;
+    width:12%;
+    background:red;
+}
+section>span:first-child{
+    position:absolute;
+    top:15vh;
+    background:rgba(255,255,255,0.6);
+    left:0;
+    transform:rotate(50deg);
+}
+section>span:nth-child(2){
+    position:absolute;
+    top:15vh;
+    background:rgba(255,255,255,0.6);
+    right:0;
+    transform:rotate(-50deg);
+}
+section #title {
+    width:100%;
+    height:18vh;
+}
+section #title h2{
+    text-align: center;
+    padding-top:10vh;
+    font-weight:100;
+    font-size:36px;
+    font-size:2.250rem;
+    font-family:'Scheherazade';
+}
+
+section #section_in ul.contents{
+    height:70vh;
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+}
+section #section_in ul.contents>li{
+    height:20%;
+    font-size:14px;
+    font-size:0.875rem;
+    font-weight:300;
+    position:relative;
+}
+section #section_in ul.contents>li:nth-child(1){
+    background:url(../image/news/news1.jpeg) no-repeat center center;
+    background-size:cover;
+}
+section #section_in ul.contents>li:nth-child(2){
+    background:url(../image/news/news2.jpeg) no-repeat center bottom;
+    background-size:cover;
+}
+section #section_in ul.contents>li:nth-child(3){
+    background:url(../image/news/news3.jpeg) no-repeat center center;
+    background-size:cover;
+}
+
+section #section_in ul.contents li>a{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background:linear-gradient(rgba(0,0,0,1),transparent);
+    margin-top:-2px;
+}
+section #section_in ul.contents li a p{
+    font-size:20px;
+    font-weight:600;
+    padding:7% 0 1%;
+    color:rgb(218,178,80);
+    width:auto;
+}
+section #section_in ul.contents li a p span{
+    display:inline-block;
+    background:rgb(218,178,80);
+    color:#111;
+    font-size:10px;
+    font-size:0.625rem;
+    padding:2px 4px;
+    margin-right:10px;
+}
+section #section_in ul.contents li hr{
+    width:10%;
+    height:1px;
+    margin:1% auto;
+    background:#fff;
+    border:none;
+}
+
+section #section_in ul.contents li .pop{ 
+	display:none; 
+	position:fixed; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100%; 
+	background:rgba(0,0,0,0.7); 
+	z-index:9999;  
+	overflow:auto;
+}
+
+section #section_in ul.contents_list{
+    height:5vh;
+    width:80%;
+    margin:20px auto;
+}
+section #section_in ul.contents_list li{
+    width:30px;
+    height:30px;
+    border:1px solid #fff;
+    margin:0 auto;
+    text-align: center;;
+}
+
+section #section_in ul.contents li .pop .pop_in { 
+	margin:20% 0; 
+    height:80%;
+    background:#000;
+    overflow: scroll;
+}
+section #section_in ul.contents li .pop .pop_in iframe{
+    width:100%;
+    margin-top:25vh;
+    border:none;
+}
+section #section_in ul.contents li .pop .pop_in .rental{
+    background:#ccc;
+    /* height:100%; */
+}
+.rental h3{
+    background:#333;
+    width:120px;
+    height:40px;
+    font-size:18px;
+    font-size:1.125rem;
+    font-weight:400;
+    margin: 10px auto;
+    line-height:40px;
+}
+.rental>p{
+    margin:0 10%;
+    color:#333;
+    font-size:18px;
+    font-size:1.125rem;
+    font-weight:500;
+}
+.rental>ul{padding:20px 20px 50px;}
+.rental>ul li{
+    color:#333;
+    line-height:20px;
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size:14px;
+    font-size:0.875rem;
+}
+
+.close{ /*닫기*/
+	position:fixed; 
+	right:30px; 
+	top:30px; 
+	color:#fff; 
+}
+@media all and (min-width:481px){
+    #pc{
+        display:block;
+        width:100%;
+        height:100%;
+        background:#111;
+        text-align: center
+    }
+    div.vote{display:none;}
+    #wrap {display: none;}
+    header{display:none;}
+
+
+}
